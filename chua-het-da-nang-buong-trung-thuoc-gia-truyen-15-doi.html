@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi"><head>
 <style type="text/css">
-<!--
-body {	background-color: #87C44A;}
+body {	background-color: #87C44A !important;}
 h1   {color: red;font-size:26px;text-align: center;}
 h2   {font-family: 'Merriweather', 'Times New Roman', Times, Serif;font-size: 20px;text-indent: 30px;color: green;font-weight: bold;}
 h3   {font-style: italic;font-size: 18px;text-indent: 30px;}
@@ -18,7 +17,15 @@ a:hover, a:active {
     color: #87C44A;
 }
 
--->
+/* style mới  */
+body{color: #000;overflow-x: hidden;height: 100%;background-image: url("https://i.imgur.com/GMmCQHC.png");background-repeat: no-repeat;background-size: 100% 100%}.card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
+@media screen and (min-width: 720px) {
+  .form-info {
+    width: 80%;
+  }
+}
+
+/* hết style mới  */
 </style>
 <script type='text/javascript'>
 //<![CDATA[
@@ -30,6 +37,11 @@ loadCSS("https://luongynguyenhuutoan.com/68.css");
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <meta content="https://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
 <link rel="Shortcut Icon" href="https://luongynguyenhuutoan.com/favico.ico" type="image/x-icon" /> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YM9RZ9S8MF"></script>
@@ -254,7 +266,36 @@ hoặc thuốc Tiêu nang hoàn.</strong></p>
 	 <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="550" ></iframe>
 	
 	</center>
-
+<!-- code mới  -->
+<div class="container-fluid mx-auto">
+  <div class="row d-flex justify-content-center">
+      <div class="form-info text-center">
+          <h3>Đăng ký tư vấn miễn phí</h3>
+          <p class="blue-text">Phòng Khám Đông Y Nguyễn Hữu Toàn<br> <p><a style="color: #00BCD4;text-align: center;" href="tel:+18006834">Hotline : 18006834</a></p></p>
+          <div class="card">
+              <h5 class="text-center mb-4">ĐIỀN THÔNG TIN </h5>
+              <form class="form-card" onsubmit="event.preventDefault()">
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Họ Và Tên<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Nhập ..." onblur="validate(1)"> </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger"> *</span></label> <input type="text" id="phone" name="phone" placeholder="Nhập ..." onblur="validate(2)"> </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Email</label> <input type="text" id="Email" name="Email" placeholder="" onblur="validate(3)"> </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Vấn đề của anh/chị,...</label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(4)"> </div>
+                  </div>
+                  <div class="row justify-content-end">
+                      <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">GỬI</button> </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- hết code mới  -->
 <h2>Chia sẻ một vài trường hợp điều trị buồng trứng đa nang tại Phòng khám Đông y Nguyễn Hữu Toàn  </h2>
 <p><strong>Đã có bé dù bị Tinh trùng yếu và đa nang buồng trứng, trứng nhỏ kém phát triển cho vợ chồng chị Nguyễn Thị Thiên Quốc Hội 1984 và chồng là anh Đỗ Viết Nhơn 1984. Địa chỉ: Đường Nguyễn Đăng, phòng trọ số 3, Hòa Khê, Thanh Khê, Đà Nẵng.
 </strong></p>
@@ -549,6 +590,89 @@ for(var i = 0; i < list.length; i++) {
 list[i].addEventListener('click', function() {
 ga('send', 'event', 'button', 'click', 'Hotline');
 });
+}
+</script>
+<script>
+  function validate(val) {
+    v1 = document.getElementById("fname");
+    v2 = document.getElementById("lname");
+    v3 = document.getElementById("email");
+    v4 = document.getElementById("mob");
+    v5 = document.getElementById("job");
+    v6 = document.getElementById("ans");
+
+    flag1 = true;
+    flag2 = true;
+    flag3 = true;
+    flag4 = true;
+    flag5 = true;
+    flag6 = true;
+
+    if(val>=1 || val==0) {
+        if(v1.value == "") {
+            v1.style.borderColor = "red";
+            flag1 = false;
+        }
+        else {
+            v1.style.borderColor = "green";
+            flag1 = true;
+        }
+    }
+
+    if(val>=2 || val==0) {
+        if(v2.value == "") {
+            v2.style.borderColor = "red";
+            flag2 = false;
+        }
+        else {
+            v2.style.borderColor = "green";
+            flag2 = true;
+        }
+    }
+    if(val>=3 || val==0) {
+        if(v3.value == "") {
+            v3.style.borderColor = "red";
+            flag3 = false;
+        }
+        else {
+            v3.style.borderColor = "green";
+            flag3 = true;
+        }
+    }
+    if(val>=4 || val==0) {
+        if(v4.value == "") {
+            v4.style.borderColor = "red";
+            flag4 = false;
+        }
+        else {
+            v4.style.borderColor = "green";
+            flag4 = true;
+        }
+    }
+    if(val>=5 || val==0) {
+        if(v5.value == "") {
+            v5.style.borderColor = "red";
+            flag5 = false;
+        }
+        else {
+            v5.style.borderColor = "green";
+            flag5 = true;
+        }
+    }
+    if(val>=6 || val==0) {
+        if(v6.value == "") {
+            v6.style.borderColor = "red";
+            flag6 = false;
+        }
+        else {
+            v6.style.borderColor = "green";
+            flag6 = true;
+        }
+    }
+
+    flag = flag1 && flag2 && flag3 && flag4 && flag5 && flag6;
+
+    return flag;
 }
 </script>
 </body>
