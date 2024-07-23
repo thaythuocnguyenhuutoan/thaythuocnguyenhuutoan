@@ -273,28 +273,70 @@ hoặc thuốc Tiêu nang hoàn.</strong></p>
           <h3>Đăng ký tư vấn miễn phí</h3>
           <p class="blue-text">Phòng Khám Đông Y Nguyễn Hữu Toàn<br> <p><a style="color: #00BCD4;text-align: center;" href="tel:+18006834">Hotline : 18006834</a></p></p>
           <div class="card">
-              <h5 class="text-center mb-4">ĐIỀN THÔNG TIN </h5>
-              <form class="form-card" onsubmit="event.preventDefault()">
+              <h5 class="text-center mb-4">ĐIỀN THÔNG TIN</h5>
+              <form id="contact-form" class="form-card" onsubmit="sendEmail(); return false;">
                   <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Họ Và Tên<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Nhập ..." onblur="validate(1)"> </div>
+                      <div class="form-group col-sm-12 flex-column d-flex"> 
+                          <label class="form-control-label px-3">Họ Và Tên<span class="text-danger"> *</span></label> 
+                          <input type="text" id="fname" name="fname" placeholder="Nhập ..." required> 
+                      </div>
                   </div>
                   <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger"> *</span></label> <input type="text" id="phone" name="phone" placeholder="Nhập ..." onblur="validate(2)"> </div>
+                      <div class="form-group col-sm-12 flex-column d-flex"> 
+                          <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger"> *</span></label> 
+                          <input type="text" id="phone" name="phone" placeholder="Nhập ..." required> 
+                      </div>
                   </div>
                   <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Email</label> <input type="text" id="Email" name="Email" placeholder="" onblur="validate(3)"> </div>
+                      <div class="form-group col-sm-12 flex-column d-flex"> 
+                          <label class="form-control-label px-3">Email</label> 
+                          <input type="email" id="Email" name="Email" placeholder=""> 
+                      </div>
                   </div>
                   <div class="row justify-content-between text-left">
-                      <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Vấn đề của anh/chị,...</label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(4)"> </div>
+                      <div class="form-group col-12 flex-column d-flex"> 
+                          <label class="form-control-label px-3">Vấn đề của anh/chị,...</label> 
+                          <input type="text" id="ans" name="ans" placeholder=""> 
+                      </div>
                   </div>
                   <div class="row justify-content-end">
-                      <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">GỬI</button> </div>
+                      <div class="form-group col-sm-6"> 
+                          <button type="submit" class="btn-block btn-primary">GỬI</button> 
+                      </div>
                   </div>
               </form>
           </div>
       </div>
   </div>
 </div>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("lweMnswlc3fSQAfim"); // Thay "YOUR_USER_ID" bằng User ID của bạn từ EmailJS
+    })();
+</script>
+<script type="text/javascript">
+  function sendEmail() {
+      var templateParams = {
+          to_email: 'thaythuoccuaban01@gmail.com', // Địa chỉ email người nhận
+            to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn', // hoặc bất kỳ tên người nhận nào bạn muốn
+            from_name: document.getElementById('fname').value,
+            phone_number: document.getElementById('phone').value,
+            email: document.getElementById('Email').value,
+            message: document.getElementById('ans').value
+      };
+
+      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+          .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              alert("Gửi email thành công!");
+          }, function(error) {
+              console.log('FAILED...', error);
+              alert("Gửi email thất bại, vui lòng thử lại.");
+          });
+  }
+</script>
+
 <!-- hết code mới  -->
 <h2>Chia sẻ một vài trường hợp điều trị buồng trứng đa nang tại Phòng khám Đông y Nguyễn Hữu Toàn  </h2>
 <p><strong>Đã có bé dù bị Tinh trùng yếu và đa nang buồng trứng, trứng nhỏ kém phát triển cho vợ chồng chị Nguyễn Thị Thiên Quốc Hội 1984 và chồng là anh Đỗ Viết Nhơn 1984. Địa chỉ: Đường Nguyễn Đăng, phòng trọ số 3, Hòa Khê, Thanh Khê, Đà Nẵng.
