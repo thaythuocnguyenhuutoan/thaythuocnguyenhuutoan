@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi"><head>
 <style type="text/css">
+  
 body {	background-color: #87C44A !important;}
 h1   {color: red;font-size:26px;text-align: center;}
 h2   {font-family: 'Merriweather', 'Times New Roman', Times, Serif;font-size: 20px;text-indent: 30px;color: green;font-weight: bold;}
@@ -18,7 +19,15 @@ a:hover, a:active {
 }
 
 /* style mới  */
-body{color: #000;overflow-x: hidden;height: 100%;background-image: url("https://i.imgur.com/GMmCQHC.png");background-repeat: no-repeat;background-size: 100% 100%}.card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
+.background-section {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url("undefined - Imgur.png"); /* Đảm bảo hình ảnh được lưu trữ đúng vị trí hoặc thay đổi đường dẫn */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
 @media screen and (min-width: 720px) {
   .form-info {
     width: 80%;
@@ -38,9 +47,8 @@ loadCSS("https://luongynguyenhuutoan.com/68.css");
 <meta content="https://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
 <link rel="Shortcut Icon" href="https://luongynguyenhuutoan.com/favico.ico" type="image/x-icon" /> 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
 
 
 <!-- Google tag (gtag.js) -->
@@ -267,74 +275,101 @@ hoặc thuốc Tiêu nang hoàn.</strong></p>
 	
 	</center>
 <!-- code mới  -->
-<div class="container-fluid mx-auto">
+<div class="background-section container-fluid mx-auto">
   <div class="row d-flex justify-content-center">
-      <div class="form-info text-center">
-          <h3>Đăng ký tư vấn miễn phí</h3>
-          <p class="blue-text">Phòng Khám Đông Y Nguyễn Hữu Toàn<br> <p><a style="color: #00BCD4;text-align: center;" href="tel:+18006834">Hotline : 18006834</a></p></p>
-          <div class="card">
-              <h5 class="text-center mb-4">ĐIỀN THÔNG TIN</h5>
-              <form id="contact-form" class="form-card" onsubmit="sendEmail(); return false;">
-                  <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-12 flex-column d-flex"> 
-                          <label class="form-control-label px-3">Họ Và Tên<span class="text-danger"> *</span></label> 
-                          <input type="text" id="fname" name="fname" placeholder="Nhập ..." required> 
-                      </div>
-                  </div>
-                  <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-12 flex-column d-flex"> 
-                          <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger"> *</span></label> 
-                          <input type="text" id="phone" name="phone" placeholder="Nhập ..." required> 
-                      </div>
-                  </div>
-                  <div class="row justify-content-between text-left">
-                      <div class="form-group col-sm-12 flex-column d-flex"> 
-                          <label class="form-control-label px-3">Email</label> 
-                          <input type="email" id="Email" name="Email" placeholder=""> 
-                      </div>
-                  </div>
-                  <div class="row justify-content-between text-left">
-                      <div class="form-group col-12 flex-column d-flex"> 
-                          <label class="form-control-label px-3">Vấn đề của anh/chị,...</label> 
-                          <input type="text" id="ans" name="ans" placeholder=""> 
-                      </div>
-                  </div>
-                  <div class="row justify-content-end">
-                      <div class="form-group col-sm-6"> 
-                          <button type="submit" class="btn-block btn-primary">GỬI</button> 
-                      </div>
-                  </div>
-              </form>
+    <div class="form-info text-center">
+      <h3>Đăng ký tư vấn miễn phí</h3>
+      <p class="blue-text">Phòng Khám Đông Y Nguyễn Hữu Toàn<br> 
+      <p><a style="color: #00BCD4;text-align: center;" href="tel:+18006834">Hotline : 18006834</a></p></p>
+      <div class="card">
+        <h5 class="text-center mb-4" style="color: #87C44A;">ĐIỀN THÔNG TIN TẠI ĐÂY</h5>
+        <form id="contact-form" class="form-card">
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-12 flex-column d-flex"> 
+              <label class="form-control-label px-3">Họ Và Tên<span class="text-danger"> *</span></label> 
+              <input type="text" id="fname" name="fname" placeholder="Nhập ..." required> 
+            </div>
           </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-12 flex-column d-flex"> 
+              <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger"> *</span></label> 
+              <input type="text" id="phone" name="phone" placeholder="Nhập ..." required> 
+            </div>
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-12 flex-column d-flex"> 
+              <label class="form-control-label px-3">Email</label> 
+              <input type="email" id="Email" name="Email" placeholder=""> 
+            </div>
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-12 flex-column d-flex"> 
+              <label class="form-control-label px-3">Vấn đề của anh/chị,...</label> 
+              <input type="text" id="ans" name="ans" placeholder=""> 
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="form-group col-sm-6"> 
+              <button type="submit" class="btn-block btn-success">GỬI</button> 
+            </div>
+          </div>
+        </form>
       </div>
+    </div>
   </div>
 </div>
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
-    (function() {
-        emailjs.init("lweMnswlc3fSQAfim"); // Thay "YOUR_USER_ID" bằng User ID của bạn từ EmailJS
-    })();
-</script>
-<script type="text/javascript">
-  function sendEmail() {
+  (function() {
+      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+      // Lấy các giá trị từ form
+      var fname = document.getElementById('fname').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('Email').value;
+      var ans = document.getElementById('ans').value;
+
+      // Kiểm tra định dạng email
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+          alert("Địa chỉ email không hợp lệ.");
+          return;
+      }
+
+      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+      var phonePattern = /^[0-9]+$/;
+      if (!phonePattern.test(phone)) {
+          alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+          return;
+      }
+
       var templateParams = {
-          to_email: 'thaythuoccuaban01@gmail.com', // Địa chỉ email người nhận
-            to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn', // hoặc bất kỳ tên người nhận nào bạn muốn
-            from_name: document.getElementById('fname').value,
-            phone_number: document.getElementById('phone').value,
-            email: document.getElementById('Email').value,
-            message: document.getElementById('ans').value
+          to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+          from_name: fname,
+          phone_number: phone,
+          email: email,
+          message: ans
       };
 
+      // Gửi email bằng EmailJS
       emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
           .then(function(response) {
               console.log('SUCCESS!', response.status, response.text);
-              alert("Gửi email thành công!");
+              alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+              
+              // Xóa nội dung của form sau khi gửi thành công
+              document.getElementById('contact-form').reset();
           }, function(error) {
               console.log('FAILED...', error);
-              alert("Gửi email thất bại, vui lòng thử lại.");
+              alert("Gửi email thất bại, bạn vui lòng thử lại.");
           });
-  }
+  });
 </script>
 
 <!-- hết code mới  -->
@@ -637,18 +672,15 @@ ga('send', 'event', 'button', 'click', 'Hotline');
 <script>
   function validate(val) {
     v1 = document.getElementById("fname");
-    v2 = document.getElementById("lname");
+    v2 = document.getElementById("phone");
     v3 = document.getElementById("email");
-    v4 = document.getElementById("mob");
-    v5 = document.getElementById("job");
-    v6 = document.getElementById("ans");
+    v4 = document.getElementById("ans");
 
     flag1 = true;
     flag2 = true;
     flag3 = true;
     flag4 = true;
-    flag5 = true;
-    flag6 = true;
+
 
     if(val>=1 || val==0) {
         if(v1.value == "") {
@@ -712,7 +744,7 @@ ga('send', 'event', 'button', 'click', 'Hotline');
         }
     }
 
-    flag = flag1 && flag2 && flag3 && flag4 && flag5 && flag6;
+    flag = flag1 && flag2 && flag3 && flag4 ;
 
     return flag;
 }
