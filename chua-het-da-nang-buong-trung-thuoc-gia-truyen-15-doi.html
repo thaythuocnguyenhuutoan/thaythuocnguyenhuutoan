@@ -30,7 +30,7 @@ a:hover, a:active {
 .card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
 @media screen and (min-width: 720px) {
   .form-info {
-    width: 80%;
+    width: 60%;
   }
 }
 
@@ -278,11 +278,8 @@ hoặc thuốc Tiêu nang hoàn.</strong></p>
 <div class="background-section container-fluid mx-auto">
   <div class="row d-flex justify-content-center">
     <div class="form-info text-center">
-      <h3>Đăng ký tư vấn miễn phí</h3>
-      <p class="blue-text">Phòng Khám Đông Y Nguyễn Hữu Toàn<br> 
-      <p><a style="color: #00BCD4;text-align: center;" href="tel:+18006834">Hotline : 18006834</a></p></p>
       <div class="card">
-        <h5 class="text-center mb-4" style="color: #87C44A;">ĐIỀN THÔNG TIN TẠI ĐÂY</h5>
+        <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
         <form id="contact-form" class="form-card">
           <div class="row justify-content-between text-left">
             <div class="form-group col-sm-12 flex-column d-flex"> 
@@ -310,7 +307,7 @@ hoặc thuốc Tiêu nang hoàn.</strong></p>
           </div>
           <div class="row justify-content-center">
             <div class="form-group col-sm-6"> 
-              <button type="submit" class="btn-block btn-success">GỬI</button> 
+              <button type="submit" class="btn-block btn-success">GỬI CHO BÁC SỸ</button> 
             </div>
           </div>
         </form>
@@ -334,13 +331,6 @@ hoặc thuốc Tiêu nang hoàn.</strong></p>
       var phone = document.getElementById('phone').value;
       var email = document.getElementById('Email').value;
       var ans = document.getElementById('ans').value;
-
-      // Kiểm tra định dạng email
-      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(email)) {
-          alert("Địa chỉ email không hợp lệ.");
-          return;
-      }
 
       // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
       var phonePattern = /^[0-9]+$/;
