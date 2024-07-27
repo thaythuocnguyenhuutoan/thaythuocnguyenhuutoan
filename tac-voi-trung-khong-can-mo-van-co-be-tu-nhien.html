@@ -20,6 +20,8 @@ loadCSS("https://luongynguyenhuutoan.com/69.css");
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <meta content="https://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
 <link rel="Shortcut Icon" href="https://luongynguyenhuutoan.com/favico.ico" type="image/x-icon" /> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YM9RZ9S8MF"></script>
@@ -82,7 +84,6 @@ window.addEventListener('load',function(){
     
     
 <style type="text/css">
-<!--
 body {	background-color: #87C44A;}
 
 .button {
@@ -190,7 +191,83 @@ text-align: center;
      display: inline-block;
      font-size: 16px;
 }
---></style>
+/* style mới  */
+.background-section {
+            color: #000;
+            overflow-x: hidden;
+            height: 100%;
+            background-image: url("undefined - Imgur.png");
+            /* Đảm bảo hình ảnh được lưu trữ đúng vị trí hoặc thay đổi đường dẫn */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .card {
+            padding: 30px 40px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            border: none !important;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        .blue-text {
+            color: #00BCD4
+        }
+
+        .form-control-label {
+            margin-bottom: 0
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 8px 15px;
+            border-radius: 5px !important;
+            margin: 5px 0px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            font-size: 18px !important;
+            font-weight: 300
+        }
+
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #00BCD4;
+            outline-width: 0;
+            font-weight: 400
+        }
+
+        .btn-block {
+            text-transform: uppercase;
+            font-size: 15px !important;
+            font-weight: 400;
+            height: 43px;
+            cursor: pointer
+        }
+
+        .btn-block:hover {
+            color: #fff !important
+        }
+
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
+
+        @media screen and (min-width: 720px) {
+            .form-info {
+                width: 60%;
+            }
+        }
+
+        /* hết style mới  */
+    </style>
+</style>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85359239-1"></script>
@@ -1008,8 +1085,103 @@ phúc.</p>
   <center>
       <p><a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa tắc vòi trứng"></a>
     </p>
-    <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="550" ></iframe>
-</center>
+ 
+                <div class="m-3">
+</center> 
+ <!-- code mới  -->
+ <div class="background-section container-fluid mx-auto">
+  <div class="row d-flex justify-content-center">
+      <div class="form-info text-center">
+          <div class="card">
+              <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
+              <form id="contact-form" class="form-card">
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-12 flex-column d-flex">
+                          <label class="form-control-label px-3">Họ Và Tên<span class="text-danger">
+                                  *</span></label>
+                          <input type="text" id="fname" name="fname" placeholder="Nhập ..." required>
+                      </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-12 flex-column d-flex">
+                          <label class="form-control-label px-3">Số Điện Thoại<span
+                                  class="text-danger">
+                                  *</span></label>
+                          <input type="text" id="phone" name="phone" placeholder="Nhập ..." required>
+                      </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-sm-12 flex-column d-flex">
+                          <label class="form-control-label px-3">Email</label>
+                          <input type="email" id="Email" name="Email" placeholder="">
+                      </div>
+                  </div>
+                  <div class="row justify-content-between text-left">
+                      <div class="form-group col-12 flex-column d-flex">
+                          <label class="form-control-label px-3">Vấn đề của anh/chị,...</label>
+                          <input type="text" id="ans" name="ans" placeholder="">
+                      </div>
+                  </div>
+                  <div class="row justify-content-center">
+                      <div class="form-group col-sm-6">
+                          <button type="submit" class="btn-block btn-success">GỬI CHO BÁC SỸ</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+      // Lấy các giá trị từ form
+      var fname = document.getElementById('fname').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('Email').value;
+      var ans = document.getElementById('ans').value;
+
+      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+      var phonePattern = /^[0-9]+$/;
+      if (!phonePattern.test(phone)) {
+          alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+          return;
+      }
+
+      var templateParams = {
+          to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+          from_name: fname,
+          phone_number: phone,
+          email: email,
+          message: ans
+      };
+
+      // Gửi email bằng EmailJS
+      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+          .then(function (response) {
+              console.log('SUCCESS!', response.status, response.text);
+              alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+
+              // Xóa nội dung của form sau khi gửi thành công
+              document.getElementById('contact-form').reset();
+          }, function (error) {
+              console.log('FAILED...', error);
+              alert("Gửi email thất bại, bạn vui lòng thử lại.");
+          });
+  });
+</script>
+
+<!-- hết code mới  -->
+
 <h2><a name="thong u hoan">Thông ứ hoàn - Thuốc hay thông tắc vòi trứng</a> </h2>
 <p><img align="left" src="https://luongynguyenhuutoan.com/images/thong-u-hoan-chua-tac-voi-trung.jpg" width="548" height="489" alt="Thông ứ hoàn chữa tắc vòi trứng"> </p>
 <p>Thông ứ hoàn điều trị viêm, tắc, dính, ứ dịch, ứ nước vòi trứng.</p>
