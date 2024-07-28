@@ -486,3 +486,89 @@ button:focus {
       padding: 10px 10px;
     }
   }
+  a.active  {
+    font-size: larger;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%) !important;
+}
+.dropdown a span {
+    font-size: larger;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+
+}
+  /* header */
+  #header {
+    background-color: #4d9924;
+    padding: 0px !important;
+  }
+  #header h1 {
+    color: hsl(0, 0%, 100%);
+  }
+#logo {
+    margin-left: 15%;
+}
+#right {
+    margin-right: 15%;
+}
+#masthead {
+    padding: 20px 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 130px;
+    height: auto;
+}
+
+#logo p {
+    font-size: 14px;
+    color: #7ac142;
+    margin-top: 10px;
+}
+
+#center p {
+    font-size: 20px;
+    color: #6cb721;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#right p {
+    font-size: 14px;
+    color: #6cb721;
+    margin: 0;
+}
+
+#right strong {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        margin: 0 !important;
+    }
+    #right {
+        display: none;
+    }
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo, #center, #right {
+        margin-bottom: 10px;
+    }
+}
+/* slide */
+
+  
+
+
+   
