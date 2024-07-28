@@ -21,7 +21,9 @@ loadCSS("https://luongynguyenhuutoan.com/69.css");
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <meta content="https://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
 <link rel="Shortcut Icon" href="https://luongynguyenhuutoan.com/favico.ico" type="image/x-icon" /> 
-
+   <link rel="stylesheet" href="header.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YM9RZ9S8MF"></script>
 <script>
@@ -408,12 +410,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <p>
     Chị Lan lấy chồng 12 năm đã có 2 bé gái, muốn sinh  thêm bé nữa nhưng thả mãi mà chưa có. Tiền sử có nang nabot đã đốt. Hiện tại có  nhân xơ tử cung 10mm. Niêm mạc tử cung  mỏng  chỉ được 5mm. Đã từng bơm IUI 1 lần nhưng ko đc. Kinh nguyệt đều, chu kỳ kinh  29 ngày, lượng kinh ngày đầu nhiều, ngày sau ít,máu đỏ tươi, hòn cục ít, kéo  dài 3-5 ngày. Tiền sử huyết áp thấp.<p>
     Điều trị 50 thang thuốc tại Phòng khám Đông y Nguyễn  Hữu Toàn chị Lan đã có bầu bé trai được 23 tuần. Chị rất vui và gửi lời cảm ơn  phòng khám.</p>
-     <center>
-  <p><a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa tắc vòi trứng"></a>
-    </p>
-   <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="550" ></iframe>
+    <!-- code mới  -->
+                  <div class="background-section container-fluid mx-auto">
+                    <div class="row d-flex justify-content-center">
+                      <div class="form-info text-center">
+                        <div class="card">
+                          <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
+                          <form id="contact-form" class="form-card">
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Họ Và Tên<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="fname" name="fname" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="phone" name="phone" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Vấn đề của anh/chị,...</label>
+                                <input type="text" id="ans" name="ans" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="form-group col-sm-6">
+                                <button type="submit" class="btn-block"
+                                  style="background-color: #1db902;color: #f9f9f9;">GỬI CHO BÁC SỸ</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                  <script type="text/javascript">
+                    (function () {
+                      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+                    })();
 
-  </center>
+                    document.getElementById('contact-form').addEventListener('submit', function (event) {
+                      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+                      // Lấy các giá trị từ form
+                      var fname = document.getElementById('fname').value;
+                      var phone = document.getElementById('phone').value;
+                      var email = document.getElementById('Email').value;
+                      var ans = document.getElementById('ans').value;
+
+                      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+                      var phonePattern = /^[0-9]+$/;
+                      if (!phonePattern.test(phone)) {
+                        alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+                        return;
+                      }
+
+                      var templateParams = {
+                        to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+                        from_name: fname,
+                        phone_number: phone,
+                        email: email,
+                        message: ans
+                      };
+
+                      // Gửi email bằng EmailJS
+                      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+                        .then(function (response) {
+                          console.log('SUCCESS!', response.status, response.text);
+                          alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+
+                          // Xóa nội dung của form sau khi gửi thành công
+                          document.getElementById('contact-form').reset();
+                        }, function (error) {
+                          console.log('FAILED...', error);
+                          alert("Gửi email thất bại, bạn vui lòng thử lại.");
+                        });
+                    });
+                  </script>
+
+                  <!-- hết code mới  -->
     
     <h4>
       <strong>Niêm mạc mỏng và nỗi lo lắng của chị Nguyễn  Thu Trang 1991. Đc: Khu 5, Đại Phúc, Thành Phố Bắc Ninh. </strong></h4> 
@@ -506,11 +595,99 @@ Thay mặt phòng  khám xin được chúc mừng chị Mừng và gia đình. 
   <p>Khi đến với #PKĐYNHT,  vợ chồng chị Hương đã có 2 bé, anh chị muốn sinh thêm con nữa. Nhưng sau hơn 2  năm trời thả tự nhiên mà không được, vợ chồng anh chị có đi làm IVF nhưng cũng  không thành công. Nguyên nhân chủ yếu do chị Hương nội tiết không tốt, niêm mạc  tử cung quá mỏng. Giữa chu kỳ kinh, niêm mạc tử cung chỉ dày 6.6mm. Kinh nguyệt  rất ít, lượng kinh ra chỉ hơn 1 ngày là hết. Sắc kinh nhợt nhạt.<br>
       Được bạn bè giới  thiệu, chị Hương có tới #PKĐYNHT (địa chỉ: số 481, lô 22 đường Lê Hồng Phong,  Đông Khê, Ngô Quyền, Hải Phòng) bắt mạch và lấy thuốc điều trị. Sau khi uống  hết 1 liệu trình 20 ngày thuốc chị Hương chưa thấy có biểu hiện gì, chị tiếp  tục uống tiếp 1 liệu trình nữa thì thấy chậm kinh, thử que đã lên 2 vạch. Chị  Hương gọi điện thông báo tin vui và gửi lời cảm ơn phòng khám.                        
     <p><strong>Lưu ý: Tùy cơ địa mỗi người mà hiệu quả điều trị của thuốc sẽ khác nhau.</strong></p>
-    <center>
-  <p><a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa tắc vòi trứng"></a>
-    </p>
-    <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="550" ></iframe>
-    </center>
+    <!-- code mới  -->
+                  <div class="background-section container-fluid mx-auto">
+                    <div class="row d-flex justify-content-center">
+                      <div class="form-info text-center">
+                        <div class="card">
+                          <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
+                          <form id="contact-form" class="form-card">
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Họ Và Tên<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="fname" name="fname" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="phone" name="phone" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Vấn đề của anh/chị,...</label>
+                                <input type="text" id="ans" name="ans" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="form-group col-sm-6">
+                                <button type="submit" class="btn-block"
+                                  style="background-color: #1db902;color: #f9f9f9;">GỬI CHO BÁC SỸ</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                  <script type="text/javascript">
+                    (function () {
+                      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+                    })();
+
+                    document.getElementById('contact-form').addEventListener('submit', function (event) {
+                      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+                      // Lấy các giá trị từ form
+                      var fname = document.getElementById('fname').value;
+                      var phone = document.getElementById('phone').value;
+                      var email = document.getElementById('Email').value;
+                      var ans = document.getElementById('ans').value;
+
+                      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+                      var phonePattern = /^[0-9]+$/;
+                      if (!phonePattern.test(phone)) {
+                        alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+                        return;
+                      }
+
+                      var templateParams = {
+                        to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+                        from_name: fname,
+                        phone_number: phone,
+                        email: email,
+                        message: ans
+                      };
+
+                      // Gửi email bằng EmailJS
+                      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+                        .then(function (response) {
+                          console.log('SUCCESS!', response.status, response.text);
+                          alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+
+                          // Xóa nội dung của form sau khi gửi thành công
+                          document.getElementById('contact-form').reset();
+                        }, function (error) {
+                          console.log('FAILED...', error);
+                          alert("Gửi email thất bại, bạn vui lòng thử lại.");
+                        });
+                    });
+                  </script>
+
+                  <!-- hết code mới  -->
   <p><strong>Liên hệ mua thuốc: Phòng khám Đông y Nguyễn Hữu Toàn. </strong></p>
   <p ><strong>Cơ sở 1: số 482, lô 22C, Lê Hồng Phong, Ngô Quyền, Hải Phòng. </strong></p>
   <p ><strong>Cơ sở 2: số 8, ngõ 60 Vũ Phạm Hàm,  Trung Hòa, Cầu Giấy, Hà Nội.</strong></p>
