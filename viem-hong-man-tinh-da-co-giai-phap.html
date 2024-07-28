@@ -20,7 +20,9 @@ loadCSS("https://luongynguyenhuutoan.com/69.css");
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <meta content="https://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
 <link rel="Shortcut Icon" href="https://luongynguyenhuutoan.com/favico.ico" type="image/x-icon" /> 
-
+   <link rel="stylesheet" href="header.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YM9RZ9S8MF"></script>
 <script>
@@ -424,11 +426,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <p>- Thuốc viên Phế Âm Hoàn </p>
   <p>- Thuốc viên Chỉ Khái Hoàn</p>
   <p>- Thuốc Siro Ho </p>
-  <center>
-  <p><a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa tắc vòi trứng"></a> 
-    </p>
-    <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="400" ></iframe>
-  </center>
+  <!-- code mới  -->
+                  <div class="background-section container-fluid mx-auto">
+                    <div class="row d-flex justify-content-center">
+                      <div class="form-info text-center">
+                        <div class="card">
+                          <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
+                          <form id="contact-form" class="form-card">
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Họ Và Tên<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="fname" name="fname" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="phone" name="phone" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Vấn đề của anh/chị,...</label>
+                                <input type="text" id="ans" name="ans" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="form-group col-sm-6">
+                                <button type="submit" class="btn-block"
+                                  style="background-color: #1db902;color: #f9f9f9;">GỬI CHO BÁC SỸ</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                  <script type="text/javascript">
+                    (function () {
+                      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+                    })();
+
+                    document.getElementById('contact-form').addEventListener('submit', function (event) {
+                      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+                      // Lấy các giá trị từ form
+                      var fname = document.getElementById('fname').value;
+                      var phone = document.getElementById('phone').value;
+                      var email = document.getElementById('Email').value;
+                      var ans = document.getElementById('ans').value;
+
+                      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+                      var phonePattern = /^[0-9]+$/;
+                      if (!phonePattern.test(phone)) {
+                        alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+                        return;
+                      }
+
+                      var templateParams = {
+                        to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+                        from_name: fname,
+                        phone_number: phone,
+                        email: email,
+                        message: ans
+                      };
+
+                      // Gửi email bằng EmailJS
+                      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+                        .then(function (response) {
+                          console.log('SUCCESS!', response.status, response.text);
+                          alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+
+                          // Xóa nội dung của form sau khi gửi thành công
+                          document.getElementById('contact-form').reset();
+                        }, function (error) {
+                          console.log('FAILED...', error);
+                          alert("Gửi email thất bại, bạn vui lòng thử lại.");
+                        });
+                    });
+                  </script>
+
+                  <!-- hết code mới  -->
  
   <h2>Kết quả chữa Viêm họng mãn tại Phòng khám Đông y Nguyễn  Hữu Toàn</h2>
   <h4><strong>&quot;May mắn cho tôi là biết đến thầy thuốc  Nguyễn Hữu Toàn mà chứng viêm họng mãn tính kéo dài 5 năm của tôi đã không còn nữa&quot; - Chia sẻ của chú Nguyễn Văn Thịnh 1956. Địa chỉ: Nguyễn Đức Cảnh, Lê Chân, Hải Phòng</strong></h4>
@@ -481,11 +571,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   <h4><strong>&quot;Cảm ơn phòng khám đã giúp tôi hết bệnh viêm họng&quot; - Anh Phạm Duy Cường sinh năm 1992. Địa chỉ: Cầu Giấy – Hà Nội.</strong></h4>
   <p>Anh bị viêm họng 1 tháng nay, dùng kháng sinh không khỏi. Hiện tại họng khô rát, thường đau nhiều khi ngủ. Họng đỏ và có nhiều hạt. Anh đến phòng khám bắt mạch và lấy thuốc điều trị. Sau khi điều trị 3 đợt thuốc (60 thang), hiện tượng đau rát họng đã khỏi hoàn toàn. Anh có đến phòng khám thông báo, anh gửi lời cảm ơn tới lương y Nguyễn Hữu Toàn và tiếp tục lấy thuốc điều trị bệnh dạ dày.</p>
-     <center>
-  <p><a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa tắc vòi trứng"></a>
-    </p>
-    <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="400" ></iframe>
-  </center>
+  <!-- code mới  -->
+                  <div class="background-section container-fluid mx-auto">
+                    <div class="row d-flex justify-content-center">
+                      <div class="form-info text-center">
+                        <div class="card">
+                          <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
+                          <form id="contact-form" class="form-card">
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Họ Và Tên<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="fname" name="fname" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="phone" name="phone" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Vấn đề của anh/chị,...</label>
+                                <input type="text" id="ans" name="ans" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="form-group col-sm-6">
+                                <button type="submit" class="btn-block"
+                                  style="background-color: #1db902;color: #f9f9f9;">GỬI CHO BÁC SỸ</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                  <script type="text/javascript">
+                    (function () {
+                      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+                    })();
+
+                    document.getElementById('contact-form').addEventListener('submit', function (event) {
+                      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+                      // Lấy các giá trị từ form
+                      var fname = document.getElementById('fname').value;
+                      var phone = document.getElementById('phone').value;
+                      var email = document.getElementById('Email').value;
+                      var ans = document.getElementById('ans').value;
+
+                      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+                      var phonePattern = /^[0-9]+$/;
+                      if (!phonePattern.test(phone)) {
+                        alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+                        return;
+                      }
+
+                      var templateParams = {
+                        to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+                        from_name: fname,
+                        phone_number: phone,
+                        email: email,
+                        message: ans
+                      };
+
+                      // Gửi email bằng EmailJS
+                      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+                        .then(function (response) {
+                          console.log('SUCCESS!', response.status, response.text);
+                          alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+
+                          // Xóa nội dung của form sau khi gửi thành công
+                          document.getElementById('contact-form').reset();
+                        }, function (error) {
+                          console.log('FAILED...', error);
+                          alert("Gửi email thất bại, bạn vui lòng thử lại.");
+                        });
+                    });
+                  </script>
+
+                  <!-- hết code mới  -->
   <h4><strong>Bệnh nhân </strong><strong>Nguyễn Đức Thắng</strong> rất vui mừng khi chia tay với bệnh viêm họng mãn tính</h4>
   <p><a target="_blank" href="mailto:ducthanghongquang1972@gmail.com">Email: ducthanghongquang1972@gmail.com</a></p>
   <p>Kính chào Lương y tôi tên là Nguyễn Đức Thắng tôi đã từng uống thuốc viêm họng của Lương y từ tháng 6-9 năm 2012 hiện tại bệnh viêng họng của tôi đã khỏi tôi đã làm việc bình thường. Tuy nhiên từ cách đây gần 2 tháng tôi có mắc một chứng bệnh là khi lằm ngủ cảm giác như có ve kêu trong tai, cứ reo reo, lúc đầu rất khó chịu, nhưng khi tỉnh dậy hoặc đi làm thì không nhận rõ cảm giác này. Tôi có đi khám tai mũi họng kết quả nội soi đều kết luận bình thường. Tuy nhiên bác sỹ có bảo tôi bị rối loại chức năng thần kinh do làm việc nhiều, căng thẳng và có kê cho tôi một toa thuốc tôi đã uống được 15 ngày nhưng chưa thấy có kết quả. Vậy xin hỏi lương y về chứng bệnh của tôi có thể khắc phục được bằng thuốc đông y không hướng điều trị như thế nào.</p>
@@ -613,11 +791,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <li>Tránh nằm máy lạnh quá lâu và để nhiệt độ quá lạnh (nhiệt độ nên để khoảng 25 độ)</li>
   <li>Không tùy tiện sử dụng thuốc kháng sinh, kháng viêm mà không hỏi ý kiến của bác sĩ để tránh lờn thuốc cũng như các tác dụng phụ không mong muốn.</li>
 </ul>
-<center>
-  <p><a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa tắc vòi trứng"></a>
-    </p>
-    <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="400" ></iframe>
-</center>
+<!-- code mới  -->
+                  <div class="background-section container-fluid mx-auto">
+                    <div class="row d-flex justify-content-center">
+                      <div class="form-info text-center">
+                        <div class="card">
+                          <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
+                          <form id="contact-form" class="form-card">
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Họ Và Tên<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="fname" name="fname" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="phone" name="phone" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Vấn đề của anh/chị,...</label>
+                                <input type="text" id="ans" name="ans" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="form-group col-sm-6">
+                                <button type="submit" class="btn-block"
+                                  style="background-color: #1db902;color: #f9f9f9;">GỬI CHO BÁC SỸ</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                  <script type="text/javascript">
+                    (function () {
+                      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+                    })();
+
+                    document.getElementById('contact-form').addEventListener('submit', function (event) {
+                      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+                      // Lấy các giá trị từ form
+                      var fname = document.getElementById('fname').value;
+                      var phone = document.getElementById('phone').value;
+                      var email = document.getElementById('Email').value;
+                      var ans = document.getElementById('ans').value;
+
+                      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+                      var phonePattern = /^[0-9]+$/;
+                      if (!phonePattern.test(phone)) {
+                        alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+                        return;
+                      }
+
+                      var templateParams = {
+                        to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+                        from_name: fname,
+                        phone_number: phone,
+                        email: email,
+                        message: ans
+                      };
+
+                      // Gửi email bằng EmailJS
+                      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+                        .then(function (response) {
+                          console.log('SUCCESS!', response.status, response.text);
+                          alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+
+                          // Xóa nội dung của form sau khi gửi thành công
+                          document.getElementById('contact-form').reset();
+                        }, function (error) {
+                          console.log('FAILED...', error);
+                          alert("Gửi email thất bại, bạn vui lòng thử lại.");
+                        });
+                    });
+                  </script>
+
+                  <!-- hết code mới  -->
 <center>
   <a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc"></a></center>
 <p align="center"><strong>&nbsp;</strong></p>

@@ -81,8 +81,13 @@ pre {
 .contact-info {
     color: green;
     font-weight: bold;
+    font-size: xx-large;
 }
-
+.contact-info_2 {
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
 .icon {
     margin-right: 5px;
 }
@@ -407,3 +412,77 @@ button:focus {
         color: #f9f9f9;
     }
 }
+/* mới  */
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+    text-align: left;
+    
+  }
+  .footer_end {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .footer-column {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  .footer-column h3 {
+    color: #87C44A;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .footer-column p, .footer-column a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  .footer-column .contact-info {
+    margin-bottom: 10px;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #333;
+  }
+  .social-icons {
+    margin-top: 10px;
+  }
+  .social-icons img {
+    margin: 0 5px;
+    width: 24px;
+    height: 24px;
+  }
+  .certifications {
+    margin-top: 10px;
+  }
+  .certifications img {
+    margin: 0 5px;
+    width: 50px;
+    height: auto;
+  }
+  hr{
+    background: #c0c5d0;
+  }
+  @media (max-width: 768px) {
+    .footer_end {
+      padding: 0 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-column {
+      min-width: 100%;
+      margin: 10px 0;
+    }
+    .footer-bottom {
+      padding: 10px 10px;
+    }
+  }

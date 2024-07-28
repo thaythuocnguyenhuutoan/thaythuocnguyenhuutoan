@@ -20,7 +20,9 @@ loadCSS("https://luongynguyenhuutoan.com/69.css");
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <meta content="https://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
 <link rel="Shortcut Icon" href="https://luongynguyenhuutoan.com/favico.ico" type="image/x-icon" /> 
-
+   <link rel="stylesheet" href="header.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YM9RZ9S8MF"></script>
 <script>
@@ -394,10 +396,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa bệnh u não"></a></p></center>
 <h2>Lý do hơn 15.000 bệnh nhân đã tin và sử dụng thuốc Đông Y của Phòng khám Đông Y Nguyễn Hữu Toàn</h2>
 <p><strong>Phòng khám Đông Y Nguyễn Hữu Toàn, với hơn 15 đời nghiên cứu và phát triển, đã nghiên cứu ra bài thuốc đặc biệt giúp hỗ trợ điều trị tràn dịch khớp gối hiệu quả. Hơn 15.000 bệnh nhân tràn dịch khớp gối chỉ sau thời gian trung bình 3-4 tháng điều trị đã khỏi hoàn toàn. Bài thuốc không chỉ có tác dụng kháng viêm, khử dịch , làm sạch ổ khớp, thông kinh hoạt lạc, giải quyết các triệu chứng sưng – đau – nóng – đỏ, ngăn ngừa biến dạng, xói mòn khớp mà còn có các tinh chất thảo dược giúp tăng cường bổ sung canxi cùng các dưỡng chất để tăng sinh dịch nhầy, tái tạo sụn khớp, phục hồi vận động linh hoạt.</strong> </p>
-  <center>
-  <p><a href="tel://18006834"><img src="https://luongynguyenhuutoan.com/vithuoc/vithuocimages/tuvan3.png" alt="Tư vấn mua thuốc chữa tắc vòi trứng"></a> </p>
-  <iframe name="TV" id="window1"  src="https://docs.google.com/forms/d/e/1FAIpQLSf6WNfcMzK7zP6ZR0qrDloNwGxKC18q-ZhEkKoyvoPAO1SDGQ/viewform" width="95%" height="400" ></iframe>
-</center>
+<!-- code mới  -->
+                  <div class="background-section container-fluid mx-auto">
+                    <div class="row d-flex justify-content-center">
+                      <div class="form-info text-center">
+                        <div class="card">
+                          <h5 class="text-center mb-4" style="color: #87C44A;">TÔI MUỐN ĐƯỢC TƯ VẤN</h5>
+                          <form id="contact-form" class="form-card">
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Họ Và Tên<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="fname" name="fname" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Số Điện Thoại<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" id="phone" name="phone" placeholder="Nhập ..." required>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                              <div class="form-group col-12 flex-column d-flex">
+                                <label class="form-control-label px-3">Vấn đề của anh/chị,...</label>
+                                <input type="text" id="ans" name="ans" placeholder="">
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="form-group col-sm-6">
+                                <button type="submit" class="btn-block"
+                                  style="background-color: #1db902;color: #f9f9f9;">GỬI CHO BÁC SỸ</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                  <script type="text/javascript">
+                    (function () {
+                      emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+                    })();
+
+                    document.getElementById('contact-form').addEventListener('submit', function (event) {
+                      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+                      // Lấy các giá trị từ form
+                      var fname = document.getElementById('fname').value;
+                      var phone = document.getElementById('phone').value;
+                      var email = document.getElementById('Email').value;
+                      var ans = document.getElementById('ans').value;
+
+                      // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+                      var phonePattern = /^[0-9]+$/;
+                      if (!phonePattern.test(phone)) {
+                        alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
+                        return;
+                      }
+
+                      var templateParams = {
+                        to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
+                        from_name: fname,
+                        phone_number: phone,
+                        email: email,
+                        message: ans
+                      };
+
+                      // Gửi email bằng EmailJS
+                      emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
+                        .then(function (response) {
+                          console.log('SUCCESS!', response.status, response.text);
+                          alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
+
+                          // Xóa nội dung của form sau khi gửi thành công
+                          document.getElementById('contact-form').reset();
+                        }, function (error) {
+                          console.log('FAILED...', error);
+                          alert("Gửi email thất bại, bạn vui lòng thử lại.");
+                        });
+                    });
+                  </script>
+
+                  <!-- hết code mới  -->
 <h4> 5 năm nay tôi không phải đi hút dịch khớp gối lần nào nữa, trước kia tôi đã từng phải khổ sở vì bệnh này.</h4>
 <p>Chia vui cùng bác Phạm Thị Mười 1959. Địa chỉ: Số 11, nhà D, khu E, Tổ 46 TT Đại học Thương Mại, Mai Dịch, Cầu Giấy, Hà Nội</p>
 <p>Bác Mười bị thoái hóa khớp,  tràn dịch khớp gối 2 bên, cách đây 2 tháng đã phải đi hút dịch 2 lần nhưng một thời gian sau lại tái phát. Hiện tại bác bị đau nhức từ đầu gối trở xuống, gối sưng, ngón chân cái, ngón tay út bên phải bị tím, co duỗi khó khăn. Ngủ kém, khó vào giấc, giấc ngủ không sâu, tỉnh giấc là khó ngủ lại. Tiền sử tiểu đường, viêm dạ dày, tiền đình.</p>
