@@ -485,11 +485,22 @@ button:focus {
     .footer-bottom {
       padding: 10px 10px;
     }
+    a.active  {
+        font-size: larger;
+        font-weight: 600;
+        color: #4d9924 !important;
+    }
+    .dropdown a span {
+        font-size: larger;
+        font-weight: 600;
+        color: #4d9924 !important;
+    
+    }
   }
   a.active  {
     font-size: larger;
     font-weight: 600;
-    color: hsl(0, 0%, 100%) !important;
+    color: hsl(0, 0%, 100%);
 }
 .dropdown a span {
     font-size: larger;
