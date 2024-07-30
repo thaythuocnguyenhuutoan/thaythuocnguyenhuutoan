@@ -485,18 +485,51 @@ button:focus {
     .footer-bottom {
       padding: 10px 10px;
     }
+    a.active  {
+        font-size: larger;
+        font-weight: 600;
+        color: #4d9924!important;
+    }
+    .dropdown a span {
+        font-size: larger;
+        font-weight: 600;
+        color: #4d9924 !important;
+    
+    }
+    h1.sitename {
+        font-size: x-large !important;
+        padding: 2px;
+    }
+    .header-inner.container.d-flex.justify-content-between.align-items-center {
+        flex-direction: inherit !important;
+    }
+    .BlogPostCard {
+        display: none;
+    }
+    .about-2 .content { 
+        padding-top: 15px;
+        text-align: center;
+    }
+    .SupportingText {
+        font-size: large;
+        font-family: 'Roboto';
+    }
   }
-  a.active  {
-    font-size: larger;
-    font-weight: 600;
-    color: hsl(0, 0%, 100%) !important;
-}
-.dropdown a span {
-    font-size: larger;
-    font-weight: 600;
-    color: hsl(0, 0%, 100%);
-
-}
+  @media (min-width: 768px) {
+    li a.active  {
+        font-size: larger;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%) !important;
+    }
+    .dropdown a span {
+        font-size: larger;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%) !important ;
+    
+    }
+    
+  }
+  
   /* header */
   #header {
     background-color: #4d9924;
