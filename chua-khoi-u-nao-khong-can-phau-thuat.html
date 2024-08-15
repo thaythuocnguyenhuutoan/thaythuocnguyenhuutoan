@@ -127,7 +127,7 @@
       <!-- Logo -->
       <div id="logo" class="d-flex flex-column align-items-center">
         <a href="https://dongynguyenhuutoan.com/" title="Đông Y Nguyễn Hữu Toàn" rel="home">
-          <img src="logo-nha-thuoc.webp" class="header_logo"
+          <img src="https://dongynguyenhuutoan.com/wp-content/uploads/logo-nha-thuoc.webp" class="header_logo"
             alt="Đông Y Nguyễn Hữu Toàn">
         </a>
       </div>
@@ -138,11 +138,15 @@
       <!-- Right Text -->
       <div id="right" class="text-right">
         <div class="d-flex align-items-center">
-          <img width="60" height="30" src="https://dongynguyenhuutoan.com/wp-content/uploads/4.png" alt="Icon điện thoại">
+          <a href="tel://18006834">
+          <img width="60" height="30" src="https://dongynguyenhuutoan.com/wp-content/uploads/4.png"
+            alt="Icon điện thoại">
+          </a>
           <div class="ml-2">
             <p class="text-success mb-0">Tư vấn sức khoẻ miễn phí</p>
             <p class="text-success mb-0"><strong>1800 68 34</strong></p>
           </div>
+          
         </div>
       </div>
     </div>
@@ -159,7 +163,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a style="color: #fff;" href="index.html" class="active">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul class="dropdown-content">
               <li><a href="https://luongynguyenhuutoan.com/" target="_blank">Trang chủ</a></li>
@@ -538,6 +542,17 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
                               </div>
                             </div>
                           </form>
+                          <div id="notification" class="HoverOff"
+                            style="display:none; width: 100%; height: 48px; justify-content: flex-start; align-items: flex-start;">
+                            <div class="Button"
+                              style="padding-left: 26px; padding-right: 26px; padding-top: 14px; padding-bottom: 14px; background: radial-gradient(56.44% 24.46% at 138.94% 18.01%, #1beb56 0%, #75d981 100%), linear-gradient(180deg, rgba(253.94, 199.98, 240.89, 0.90) 0%, rgba(237, 146, 215, 0) 40%); box-shadow: 0px 10px 30px rgba(234, 113, 197, 0.50); border-radius: 10px; overflow: hidden; border: 1px black solid; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                              <div
+                                style="text-align: center; color: rgba(255, 255, 255, 0.60); font-size: 17px; font-family: SF Pro; font-weight: 400; word-wrap: break-word"><i class="fas fa-check-circle"></i></div>
+                              <div class="GenerateImages"
+                                style="text-align: center; color: white; font-size: 15px; font-family: Inter; font-weight: 500; line-height: 19.50px; word-wrap: break-word">
+                                Generate Images</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -579,6 +594,15 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
                       emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
                         .then(function (response) {
                           console.log('SUCCESS!', response.status, response.text);
+
+                          // Hiển thị thông báo trong div
+                          document.querySelector('.GenerateImages').innerText = "Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!";
+                          document.getElementById('notification').style.display = 'flex';
+
+                          // Ẩn form
+                          document.getElementById('contact-form').style.display = 'none';
+
+                          // Hiển thị alert
                           alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
 
                           // Xóa nội dung của form sau khi gửi thành công
@@ -729,16 +753,17 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
 
             <h3 class="widget-title">Bài viết liên quan</h3>
             <div class="blog-post-card">
-              <a href="https://amp.thaythuoccuaban.com/chedoan/unao.html"> <img class="image-icon" alt=""
+              <a href="phuong-phap-dieu-tri-nao-ung-thuy-bang-dong-y.html"> <img class="image-icon" alt=""
                   src="https://luongynguyenhuutoan.com/images/nao-ung-thuy.jpg" /></a>
 
               <section class="content">
                 <div class="heading-and-text">
-                  <div class="author"><a href="https://amp.thaythuoccuaban.com/chedoan/unao.html">Chế độ ăn uống cho bệnh u não</a></div>
+                  <div class="author"><a href="phuong-phap-dieu-tri-nao-ung-thuy-bang-dong-y.html">Cơ hội cho bệnh nhân
+                      não úng thủy</a></div>
                   <div class="heading-and-text1">
                     <div class="heading"></div>
                     <div class="supporting-text">
-                      U não là căn bệnh không hề hiếm gặp. Bệnh có thể gặp ở trẻ con và người lớn. U não được chia làm 2 loại chính...
+                      Não úng thủy được biết đến là bệnh khó điều trị. Bệnh hay gặp ở trẻ sơ sinh và trẻ nhỏ...
                     </div>
                   </div>
                 </div>
@@ -763,16 +788,18 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
 
             <h3 class="widget-title">Bài viết liên quan</h3>
             <div class="blog-post-card">
-              <a href="https://amp.thaythuoccuaban.com/thuoc_chua_benh_viem_dau_ctuong/unao.html"> <img class="image-icon" alt=""
+              <a href="viem-phe-quan-man-nang-den-dau-cung-het.html"> <img class="image-icon" alt=""
                   src="https://luongynguyenhuutoan.com/images/viem-phe-quan1.jpg" /></a>
 
               <section class="content">
                 <div class="heading-and-text">
-                  <div class="author"><a href="https://amp.thaythuoccuaban.com/thuoc_chua_benh_viem_dau_ctuong/unao.html">BỆNH U NÃO CÓ CHỮA ĐƯỢC KHÔNG?</a></div>
+                  <div class="author"><a href="viem-phe-quan-man-nang-den-dau-cung-het.html">Viêm phế quản cấp và mãn
+                      tính nặng tới đâu cũng hết</a></div>
                   <div class="heading-and-text1">
                     <div class="heading"></div>
                     <div class="supporting-text">
-                      U não có chữa được không là câu hỏi mà hầu hết bệnh nhân, hoặc người nhà bệnh nhân đều muốn biết. Bệnh u não lành tính hoặc thậm chí u não ác tính có thể được chữa khỏi...
+                      Viêm phế quản (đông y gọi là khái thấu) là một chứng bệnh hô hấp có thể gặp ở bất kỳ người nào,
+                      lứa tuổi nào từ trẻ sơ sinh cho tới người già...
                     </div>
                   </div>
                 </div>
@@ -942,15 +969,6 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
   <!-- End of LiveChat code -->
   <!-- End of LiveChat code -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10966315732"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-10966315732');
-  </script>
 
 </body>
 
