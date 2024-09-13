@@ -14,7 +14,7 @@ html {
 
 body {
   line-height: 1.6;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   color: #6F8BA4;
@@ -270,7 +270,8 @@ a.btn.btn-main-2.btn-round-full {
 }
 
 .text-md {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #198754!important;
 }
 
 .text-lg {
@@ -557,8 +558,8 @@ a:focus {
 .appoinment-content .emergency {
   position: absolute;
   content: "";
-  right: 65px;
-  bottom: 20px;
+  right: 125px;
+  bottom: -80px;
   background: #223a66;
   padding: 48px;
 }
@@ -962,6 +963,9 @@ a:focus {
   }
   .testimonial::before {
     display: none;
+  }
+  .section-title {
+    margin-top: 60px;
   }
 }
 
@@ -1495,7 +1499,7 @@ pre {
   /* Ngắt từ nếu quá dài */
   overflow-x: hidden;
   /* Ẩn thanh cuộn ngang */
-  font-family: 'Times New Roman', Times, Serif;
+  font-family: 'Roboto', sans-serif !important;
   font-size: 15px !important;
 
 }
