@@ -30,7 +30,20 @@
     gtag('js', new Date());
     gtag('config', 'G-YM9RZ9S8MF');
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHX3D8L26E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-YHX3D8L26E'); 
+  </script>
+  <script type='text/javascript'>
+    //<![CDATA[
+    function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+    loadCSS("https://luongynguyenhuutoan.com/68.css");
+    //]]>
+  </script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -39,7 +52,44 @@
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-MLB6547');</script>
-
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-605814854/0k4cCOWzqNwBEMaA8KAC',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-605814854/BKjBCOi1ldsBEMaA8KAC',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector('a[href^="tel:"]').addEventListener('click', function () {
+        gtag('event', 'Click', {
+          'event_category': 'Hotline',
+          'event_label': '18006834'
+        });
+      });
+    });      
+  </script>
   <!-- JSON-LD structured data -->
   <script type="application/ld+json">
     {
@@ -119,6 +169,8 @@
 
     gtag('config', 'AW-10966315732');
   </script>
+  <!-- pixel  -->
+
 </head>
 
 <body class="index-page">
@@ -127,8 +179,7 @@
       <!-- Logo -->
       <div id="logo" class="d-flex flex-column align-items-center">
         <a href="https://dongynguyenhuutoan.com/" title="Đông Y Nguyễn Hữu Toàn" rel="home">
-          <img src="https://dongynguyenhuutoan.com/wp-content/uploads/logo-nha-thuoc.webp" class="header_logo"
-            alt="Đông Y Nguyễn Hữu Toàn">
+          <img src="./assets/assets/img/logo-nha-thuoc.webp" class="header_logo" alt="Đông Y Nguyễn Hữu Toàn">
         </a>
       </div>
       <!-- Center Text -->
@@ -139,14 +190,14 @@
       <div id="right" class="text-right">
         <div class="d-flex align-items-center">
           <a href="tel://18006834">
-          <img width="60" height="30" src="https://dongynguyenhuutoan.com/wp-content/uploads/4.png"
-            alt="Icon điện thoại">
+            <a href="tel:18006834"><img width="60" height="30" src="./assets/assets/img/icons8-phone-50.png"
+                alt="Icon điện thoại"></a>
           </a>
           <div class="ml-2">
             <p class="text-success mb-0">Tư vấn sức khoẻ miễn phí</p>
             <p class="text-success mb-0"><strong>1800 68 34</strong></p>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -547,7 +598,9 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
                             <div class="Button"
                               style="padding-left: 26px; padding-right: 26px; padding-top: 14px; padding-bottom: 14px; background: radial-gradient(56.44% 24.46% at 138.94% 18.01%, #1beb56 0%, #75d981 100%), linear-gradient(180deg, rgba(253.94, 199.98, 240.89, 0.90) 0%, rgba(237, 146, 215, 0) 40%); box-shadow: 0px 10px 30px rgba(234, 113, 197, 0.50); border-radius: 10px; overflow: hidden; border: 1px black solid; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
                               <div
-                                style="text-align: center; color: rgba(255, 255, 255, 0.60); font-size: 17px; font-family: SF Pro; font-weight: 400; word-wrap: break-word"><i class="fas fa-check-circle"></i></div>
+                                style="text-align: center; color: rgba(255, 255, 255, 0.60); font-size: 17px; font-family: SF Pro; font-weight: 400; word-wrap: break-word">
+                                <i class="fas fa-check-circle"></i>
+                              </div>
                               <div class="GenerateImages"
                                 style="text-align: center; color: white; font-size: 15px; font-family: Inter; font-weight: 500; line-height: 19.50px; word-wrap: break-word">
                                 Generate Images</div>
@@ -569,17 +622,32 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
                     document.getElementById('contact-form').addEventListener('submit', function (event) {
                       event.preventDefault(); // Ngăn chặn hành vi mặc định của form
 
-                      // Lấy các giá trị từ form
-                      var fname = document.getElementById('fname').value;
-                      var phone = document.getElementById('phone').value;
-                      var email = document.getElementById('Email').value;
-                      var ans = document.getElementById('ans').value;
+                      // Lấy các giá trị từ form và loại bỏ khoảng trắng thừa
+                      var fname = document.getElementById('fname').value.trim();
+                      var phone = document.getElementById('phone').value.trim();
+                      var email = document.getElementById('Email').value.trim();
+                      var ans = document.getElementById('ans').value.trim();
+
+                      // Kiểm tra xem các trường bắt buộc đã được điền chưa
+                      if (fname === '' || phone === '') {
+                        alert("Vui lòng điền đầy đủ Họ Tên và Số Điện Thoại.");
+                        return;
+                      }
 
                       // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
                       var phonePattern = /^[0-9]+$/;
                       if (!phonePattern.test(phone)) {
                         alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
                         return;
+                      }
+
+                      // Kiểm tra định dạng email nếu đã được điền
+                      if (email !== '') {
+                        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailPattern.test(email)) {
+                          alert("Địa chỉ email không hợp lệ. Vui lòng kiểm tra lại.");
+                          return;
+                        }
                       }
 
                       var templateParams = {
@@ -594,6 +662,9 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
                       emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
                         .then(function (response) {
                           console.log('SUCCESS!', response.status, response.text);
+
+                          // Ghi nhận sự kiện Lead khi gửi thành công
+                          fbq('track', 'Lead');
 
                           // Hiển thị thông báo trong div
                           document.querySelector('.GenerateImages').innerText = "Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!";
@@ -613,7 +684,6 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
                         });
                     });
                   </script>
-
                   <!-- hết code mới  -->
                   <h3 id="unaolagi">Khối u não là gì?</h3>
                   <pre>
@@ -968,9 +1038,43 @@ Cả gia đình cháu và cháu không còn hy vọng, buông xuôi chờ ngày 
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
     })();
   </script>
+  <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>
+    (function () {
+      var cx = '007327496428018529621:y3kfp9kfjwo';
+      var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
   <!-- End of LiveChat code -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
-
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1257219125465962');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1257219125465962&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 </body>
 
 </html>
