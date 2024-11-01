@@ -183,6 +183,26 @@
             margin-bottom: -25px !important;
         }
     </style>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '864493939183031');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=864493939183031&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
 </head>
 
 <body class="index-page">
@@ -1239,19 +1259,20 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <script type="text/javascript">
+        // Initialize EmailJS
         (function () {
-            emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
+            emailjs.init("lweMnswlc3fSQAfim");
         })();
 
+        // Appointment Form Handler
         document.getElementById('appoinment-form').addEventListener('submit', function (event) {
-            event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+            event.preventDefault();
 
-            // Lấy các giá trị từ form mới
             var name = document.getElementById('name').value;
             var phone = document.getElementById('phone').value;
             var message = document.getElementById('message').value;
 
-            // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+            // Phone validation
             var phonePattern = /^[0-9]+$/;
             if (!phonePattern.test(phone)) {
                 alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
@@ -1262,48 +1283,38 @@
                 to_name: 'Phòng Khám Đông Y Nguyễn Hữu Toàn',
                 from_name: name,
                 phone_number: phone,
-                email: '', // Form này không có trường email, bạn có thể thêm vào nếu cần thiết
+                email: '',
                 message: message
             };
 
-            // Gửi email bằng EmailJS
+            // Track form submission with Meta Pixel
+            fbq('track', 'Lead', {
+                content_name: 'Appointment Form Submission',
+                content_category: 'Form Submit'
+            });
+
+            // Send email
             emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
-
-                    // Xóa nội dung của form sau khi gửi thành công
                     document.getElementById('appoinment-form').reset();
                 }, function (error) {
                     console.log('FAILED...', error);
                     alert("Gửi email thất bại, bạn vui lòng thử lại.");
                 });
         });
-    </script>
-    <script type="text/javascript">
-        window.__lc = window.__lc || {};
-        window.__lc.license = 8727051;
-        (function () {
-            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-        })();
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("lweMnswlc3fSQAfim"); // Thay bằng User ID của bạn từ EmailJS
-        })();
 
+        // Contact Form Handler
         document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+            event.preventDefault();
 
-            // Lấy các giá trị từ form
             var fname = document.getElementById('fname').value;
             var phone = document.getElementById('phone').value;
             var email = document.getElementById('Email').value;
             var ans = document.getElementById('ans').value;
 
-            // Kiểm tra định dạng số điện thoại (ví dụ: chỉ chứa số)
+            // Phone validation
             var phonePattern = /^[0-9]+$/;
             if (!phonePattern.test(phone)) {
                 alert("Số điện thoại không hợp lệ. Vui lòng chỉ sử dụng các ký tự số.");
@@ -1318,19 +1329,32 @@
                 message: ans
             };
 
-            // Gửi email bằng EmailJS
+            // Track form submission with Meta Pixel
+            fbq('track', 'Lead', {
+                content_name: 'Contact Form Submission',
+                content_category: 'Form Submit'
+            });
+
+            // Send email
             emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
-
-                    // Xóa nội dung của form sau khi gửi thành công
                     document.getElementById('contact-form').reset();
                 }, function (error) {
                     console.log('FAILED...', error);
                     alert("Gửi email thất bại, bạn vui lòng thử lại.");
                 });
         });
+    </script>
+    <script type="text/javascript">
+        window.__lc = window.__lc || {};
+        window.__lc.license = 8727051;
+        (function () {
+            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+        })();
     </script>
     <script src="assets/vendor/aos/aos.js"></script>
     <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
