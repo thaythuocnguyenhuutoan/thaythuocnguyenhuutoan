@@ -1259,7 +1259,6 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <script type="text/javascript">
-        // Initialize EmailJS
         (function () {
             emailjs.init("lweMnswlc3fSQAfim");
         })();
@@ -1297,8 +1296,9 @@
             emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
                     document.getElementById('appoinment-form').reset();
+                    // Chuyển hướng ngay lập tức khi thành công
+                    window.location.href = 'https://www.dongynguyenhuutoan.com/cam-on-tran-dich-khop-goi';
                 }, function (error) {
                     console.log('FAILED...', error);
                     alert("Gửi email thất bại, bạn vui lòng thử lại.");
@@ -1339,8 +1339,9 @@
             emailjs.send('service_gxbbx0f', 'template_afmqdzu', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    alert("Thông tin của bạn đã được chuyển tới Bác Sỹ. Xin cảm ơn!");
                     document.getElementById('contact-form').reset();
+                    // Chuyển hướng ngay lập tức khi thành công
+                    window.location.href = 'https://www.dongynguyenhuutoan.com/cam-on-tran-dich-khop-goi';
                 }, function (error) {
                     console.log('FAILED...', error);
                     alert("Gửi email thất bại, bạn vui lòng thử lại.");
