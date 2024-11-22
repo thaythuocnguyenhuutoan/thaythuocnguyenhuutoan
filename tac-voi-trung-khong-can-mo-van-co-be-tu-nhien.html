@@ -129,6 +129,120 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/assets/css/history.css">
+  <style>
+    .daily-video-showcase {
+      background: linear-gradient(145deg, #f3f4f6 0%, #ffffff 100%);
+      padding: 2.5rem;
+      border-radius: 20px;
+      margin: 3rem auto;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-content-wrap {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid #eaeaea;
+    }
+
+    .showcase-heading {
+      color: #2c3e50;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .date-info {
+      font-size: 1.3rem;
+      color: #5a6c7d;
+      margin-bottom: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .video-display-area {
+      margin: 1.5rem 0;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-display-area iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .navigation-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .control-btn {
+      background: #3498db;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+    }
+
+    .control-btn:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+    }
+
+    .video-title {
+      margin-top: 1rem;
+      color: #2c3e50;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      .daily-video-showcase {
+        margin: 1.5rem;
+        padding: 1rem;
+      }
+
+      .showcase-heading {
+        font-size: 1.8rem;
+      }
+
+      .navigation-controls {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .control-btn {
+        width: 100%;
+        padding: 0.8rem;
+      }
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -339,7 +453,7 @@
           trệ, nên sau khi viêm nhiễm cơ thể không đào thải được huyết ứ, dịch độc, tế bào chết ra ngoài, làm vòi trứng
           dầy dính chít hẹp.</p>
         </pre>
-        <div class="col-lg-4">
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
           <img src="https://luongynguyenhuutoan.com/images/nguyenthilien1989.jpg" alt="ho-eo-tu-cung.jpg"
             class="img-fluid w-100" style="height: 350px; object-fit: cover;">
         </div>
@@ -352,14 +466,14 @@
     Bài thuốc THÔNG tắc vòi trứng của Lương y Nguyễn Hữu Toàn thích hợp điều trị được mọi trường hợp tắc vòi trứng dù vị trí tắc ở đoạn gần, tắc đoạn kẽ, tắc đoạn eo, tắc đoạn loa, tắc dạng sừng, tắc toàn bộ vòi trứng,... Trường hợp bệnh nhân bị viêm mủ vòi trứng, áp xe vòi trứng khi dùng thuốc cũng có tác dụng hiệu quả. Bệnh nhân chỉ cần uống thuốc, không sợ đau đớn, không gây viêm nhiễm, chống tắc lại, ngoài ra thuốc còn có tác dụng làm mềm mại vòi trứng tạo cơ hội mang thai tự nhiên.
           </pre>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4 col-12 d-flex justify-content-center align-items-center">
           <iframe width="420" height="225" src="https://www.youtube.com/embed/d1CaOW-HNJA"
             title="CHỮA TẮC VÒI TRỨNG KO PHẢI MỔ - UỐNG ĐÔNG Y THÔNG NGAY - CÓ THAI TỰ NHIÊN - DẤU HIỆU TẮC VÒI TRỨNG"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="col-lg-8">
+        <div class="col-md-8 col-12">
           <h4 class="fw-bold text-danger text-center">Bài thuốc THÔNG TẮC VÒI TRỨNG
           </h4>
           <pre>
@@ -372,13 +486,13 @@ Triệu chứng: tắc vòi trứng, sợ lạnh, mạch xích huyền, trì, �
 Bài thuốc: Ngải cứu, Qui đầu, Ngô thù, Xuyên khung, Tục đoạn, Bạch thược, Hoàng kỳ Hương phụ, Sinh địa, Quan quế, Đào nhân, Hồng hoa, Một dược...
           </pre>
         </div>
-        <h4 class="fw-bold text-danger text-center">Thông ứ hoàn - Thuốc hay thông tắc vòi trứng
-        </h4>
-        <div class="col-md-4 col-12">
+        <div class="col-md-4 col-12 d-flex justify-content-center align-items-center">
           <img src="https://luongynguyenhuutoan.com/images/thong-u-hoan-chua-tac-voi-trung.jpg" width="100%"
             height="489" alt="Thông ứ hoàn chữa tắc vòi trứng">
         </div>
         <div class="col-md-8 col-12">
+          <h4 class="fw-bold text-danger text-center">Thông ứ hoàn - Thuốc hay thông tắc vòi trứng
+          </h4>
           <pre>
 Thông ứ hoàn điều trị viêm, tắc, dính, ứ dịch, ứ nước vòi trứng.
 
@@ -388,10 +502,11 @@ Như chúng ta đã biết vòi trứng là ống dẫn noãn từ buồng trứ
 
 Trải qua thời gian nghiên cứu các bài thuốc cổ, kết hợp với kinh nghiệm rút ra qua nhiều ca điều trị cho bệnh nhân tắc vòi trứng, Lương y Nguyễn Hữu Toàn đã điều chế thành công thuốc THÔNG Ứ HOÀN.
 
-Thông ứ hoàn là sự phối ngẫu của các vị thuốc quý như: nhân sâm, hoàng kỳ, thăng ma, quy đầu, đào nhân, chỉ sác,…có tác dụng Hành khí hóa ứ dùng trong các trường hợp bệnh nhân bị viêm, tắc, dính vòi trứng lâu ngày, bị tắc đo tắc lại nhiều lần.
 </pre>
         </div>
         <pre>
+Thông ứ hoàn là sự phối ngẫu của các vị thuốc quý như: nhân sâm, hoàng kỳ, thăng ma, quy đầu, đào nhân, chỉ sác,…có tác dụng Hành khí hóa ứ dùng trong các trường hợp bệnh nhân bị viêm, tắc, dính vòi trứng lâu ngày, bị tắc đo tắc lại nhiều lần.
+
 Trải qua thời gian nghiên cứu các bài thuốc cổ, kết hợp với kinh nghiệm rút ra qua nhiều ca điều trị cho bệnh nhân tắc vòi trứng, Lương y Nguyễn Hữu Toàn đã điều chế thành công thuốc THÔNG Ứ HOÀN.
 
 Thông ứ hoàn là sự phối ngẫu của các vị thuốc quý như: nhân sâm, hoàng kỳ, thăng ma, quy đầu, đào nhân, chỉ sác,…có tác dụng Hành khí hóa ứ dùng trong các trường hợp bệnh nhân bị viêm, tắc, dính vòi trứng lâu ngày, bị tắc đo tắc lại nhiều lần.
@@ -401,11 +516,7 @@ Bệnh nhân bị tắc vòi trứng khi dùng thuốc điều trị tại Phòn
 
 Bệnh nhân tắc vòi trứng khi uống thuốc của phòng khám Đông y Nguyễn Hữu Toàn có thể có biểu hiện đau, cắn nhấm nhói ở vòi trứng, ra nhiều khí hư màu vàng, hoặc trắng đó là điều hoàn toàn bình thường (Đây là do thuốc tác động vào vùng vòi trứng giúp thông vòi trứng).
         </pre>
-        <iframe width="100%" height="450" src="https://www.youtube.com/embed/iKIGd9vZLTM"
-          title="Hướng dẫn sắc thuốc chữa Tắc Vòi Trứng - Đông y gia truyền Nguyễn Hữu Toàn - Hotline: 18006834"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
       </div>
     </div>
   </section>
@@ -449,28 +560,40 @@ Uống thuốc không chỉ giúp hoạt huyết, chống viêm không chỉ th�
 Do đó nếu kết hợp đồng thời uống thuốc và châm cứu thì hiệu quả sẽ cao hơn, thời gian điều trị sẽ nhanh hơn.</pre>
         </div>
       </div>
-      <div class="row align-items-center mt-3" style="padding: 20px;
+      <div class="daily-video-showcase">
+        <div class="video-content-wrap">
+          <h2 class="showcase-heading">Video Hữu Ích Hàng Ngày</h2>
+          <div id="todayDate" class="date-info"></div>
+          <div id="videoDisplay" class="video-display-area"></div>
+          <div class="navigation-controls">
+            <div id="prevBtn" class="control-btn">← Video Trước</div>
+            <div id="nextBtn" class="control-btn">Video Tiếp →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center mt-3" style="padding: 20px;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);">
-        <div class="col-lg-4 col-sm-6">
-          <div class="about-img mt-4 mt-lg-0">
-            <img src="https://luongynguyenhuutoan.com/images/du-thi-hoa1.jpg" alt="thaythuoccuaban" class="img-fluid"
-              loading="lazy">
-          </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="about-img mt-4 mt-lg-0">
+          <img src="https://luongynguyenhuutoan.com/images/du-thi-hoa1.jpg" alt="thaythuoccuaban" class="img-fluid"
+            loading="lazy">
         </div>
-        <div class="col-lg-8 col-sm-6">
-          <div class="about-content pl-4 mt-4 mt-lg-0">
-            <h3 class="text-md title-color">Bệnh nhân Tắc vòi trứng mổ không thông, IVF thất bại, uống thuốc của Lương y
-              Nguyễn Hữu Toàn đã sinh bé!</h3>
-            <p class="mt-4 fw-bold">Hạnh phúc đã mỉm cười với vợ chồng chị Hoa sau 6 năm chờ đợi.</p>
+      </div>
+      <div class="col-lg-8 col-sm-6">
+        <div class="about-content pl-4 mt-4 mt-lg-0">
+          <h3 class="text-md title-color">Bệnh nhân Tắc vòi trứng mổ không thông, IVF thất bại, uống thuốc của Lương y
+            Nguyễn Hữu Toàn đã sinh bé!</h3>
+          <p class="mt-4 fw-bold">Hạnh phúc đã mỉm cười với vợ chồng chị Hoa sau 6 năm chờ đợi.</p>
 
-            <p class="fw-bold">Hiếm muộn 6 năm – Nguyên nhân do Tắc vòi trứng, buồng trứng đa nang uống thuốc của Lương
-              y Nguyễn Hữu Toàn chỉ 6 liệu trình đã có thai tự nhiên. Chúc mừng chị Dư Thị Hoa 1990 – Địa chỉ: Cầu Xá,
-              Quỳnh Hải, Quỳnh Phụ, Thái Bình</p>
-            <pre>   Trích bệnh án của chị Hoa:
+          <p class="fw-bold">Hiếm muộn 6 năm – Nguyên nhân do Tắc vòi trứng, buồng trứng đa nang uống thuốc của Lương
+            y Nguyễn Hữu Toàn chỉ 6 liệu trình đã có thai tự nhiên. Chúc mừng chị Dư Thị Hoa 1990 – Địa chỉ: Cầu Xá,
+            Quỳnh Hải, Quỳnh Phụ, Thái Bình</p>
+          <pre>   Trích bệnh án của chị Hoa:
 
   "Chị Hoa lấy chồng đã 6 năm, năm 2019 từng có bầu 1 lần nhưng được 7 tuần thì bị sảy thai. Sau lần đó chị bị tắc vòi trứng, đã mổ thông vòi trứng nhưng vẫn bị tắc lại. Ngoài ra chị còn bị Đa nang buồng trứng, kinh nguyệt không đều, tháng có, tháng không, kinh thường bị lên ngày. Sắc kinh đỏ, thỉnh thoảng có hòn cục. Mỗi lần có kinh lại bị đau bụng kinh dữ dội."
               
@@ -479,27 +602,27 @@ Do đó nếu kết hợp đồng thời uống thuốc và châm cứu thì hi�
   Chị Hoa uống thuốc liên tục trong vòng 4 tháng  (120 thang thuốc kèm theo thuốc viên thông ứ hoàn) thì thấy chậm kinh, thử que lên 2 vạch.
               
   Hiện tại chị Hoa đã sinh bé gái đáng yêu, khỏe mạnh. Chị Hoa gửi lời cảm ơn phòng khám Đông y Nguyễn Hữu Toàn. (Hình ảnh bé yêu con chị Hoa)</pre>
-          </div>
         </div>
       </div>
-      <div class="row align-items-center mt-3" style="padding: 20px;
+    </div>
+    <div class="row align-items-center mt-3" style="padding: 20px;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);">
 
-        <div class="col">
+      <div class="col">
 
-          <div class="about-content pl-4 mt-4 mt-lg-0">
-            <h3 class="text-md title-color text-center">Bệnh nhân Tắc vòi trứng mổ không thông, IVF thất bại, uống thuốc
-              của Lương y
-              Nguyễn Hữu Toàn đã sinh bé!</h3>
-            <div class="about-img mt-5 mb-3 mt-lg-0 text-center">
-              <img src="https://luongynguyenhuutoan.com/images/pham-thi-lan1990-3.jpg" alt="thaythuoccuaban"
-                class="img-fluid" loading="lazy">
-            </div>
-            <pre><strong>"Mình bị tắc vòi trứng điều trị 2 liệu trình thuốc đã thông vòi trứng, mình đã có bé. Cảm ơn phòng khám rất nhiều"</strong>  Đó là chia sẻ của chị Phạm Thị Lan 1990, Địa chỉ Tổ 16, Ngọc Thụy, Long Biên, Hà Nội.
+        <div class="about-content pl-4 mt-4 mt-lg-0">
+          <h3 class="text-md title-color text-center">Bệnh nhân Tắc vòi trứng mổ không thông, IVF thất bại, uống thuốc
+            của Lương y
+            Nguyễn Hữu Toàn đã sinh bé!</h3>
+          <div class="about-img mt-5 mb-3 mt-lg-0 text-center">
+            <img src="https://luongynguyenhuutoan.com/images/pham-thi-lan1990-3.jpg" alt="thaythuoccuaban"
+              class="img-fluid" loading="lazy">
+          </div>
+          <pre><strong>"Mình bị tắc vòi trứng điều trị 2 liệu trình thuốc đã thông vòi trứng, mình đã có bé. Cảm ơn phòng khám rất nhiều"</strong>  Đó là chia sẻ của chị Phạm Thị Lan 1990, Địa chỉ Tổ 16, Ngọc Thụy, Long Biên, Hà Nội.
 
 Phòng khám ơi, mình là Lan, trước mình có uống thuốc chữa tắc vòi trứng của Phòng khám, và có bé. Đây là ảnh bé nhà mình. Mình cảm ơn phòng khám rất nhiều.
      
@@ -509,29 +632,29 @@ Qua thông tin trên mạng internet chị Lan biết đến Lương y Nguyễn 
     
 Đầu năm 2019 chồng chị Lan có tới phòng khám, và có chia sẻ hình ảnh con trai anh chị với phòng khám. Trộm vía bé rất khỏe mạnh, thông minh và đáng yêu. (Hình ảnh chị Lan và con trai)
             </pre>
-          </div>
         </div>
       </div>
-      <div class="row align-items-center mt-3" style="padding: 20px;
+    </div>
+    <div class="row align-items-center mt-3" style="padding: 20px;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);">
 
-        <div class="col">
+      <div class="col">
 
-          <div class="about-content pl-4 mt-4 mt-lg-0">
-            <h3 class="text-md title-color text-center">Bệnh nhân Tắc vòi trứng mổ không thông, IVF thất bại, uống thuốc
-              của Lương y
-              Nguyễn Hữu Toàn đã sinh bé!</h3>
-            <div class="d-flex justify-content-center align-items-center mt-5 mb-3 mt-lg-0">
-              <img src="https://www.thaythuoccuaban.com/thuoc_chua_benh_viem_dau_images/trancamtu(1).JPG"
-                alt="trancamtu(1).JPG" class="img-fluid mx-2" style="height: 190px; width: 300px;" loading="lazy">
-              <img src="https://www.thaythuoccuaban.com/thuoc_chua_benh_viem_dau_images/tran-cam-tu-con-trai.jpg"
-                alt="trancamtu(1).JPG" class="img-fluid mx-2" style="height: 190px; width: 300px;" loading="lazy">
-            </div>
-            <pre>Bệnh án: Chị Tú kết hôn 5 năm mà chưa có con. Chị đi kiểm tra bác sĩ kết luận tắc vòi trứng, đã nong nhưng không được. Kinh nguyệt của chị không đều, có khi 40 ngày mới có kinh một lần. Lượng kinh ít, sắc kinh thâm đen, ăn uống đại tiểu tiện bình thường.
+        <div class="about-content pl-4 mt-4 mt-lg-0">
+          <h3 class="text-md title-color text-center">Bệnh nhân Tắc vòi trứng mổ không thông, IVF thất bại, uống thuốc
+            của Lương y
+            Nguyễn Hữu Toàn đã sinh bé!</h3>
+          <div class="d-flex justify-content-center align-items-center mt-5 mb-3 mt-lg-0">
+            <img src="https://www.thaythuoccuaban.com/thuoc_chua_benh_viem_dau_images/trancamtu(1).JPG"
+              alt="trancamtu(1).JPG" class="img-fluid mx-2" style="height: 190px; width: 300px;" loading="lazy">
+            <img src="https://www.thaythuoccuaban.com/thuoc_chua_benh_viem_dau_images/tran-cam-tu-con-trai.jpg"
+              alt="trancamtu(1).JPG" class="img-fluid mx-2" style="height: 190px; width: 300px;" loading="lazy">
+          </div>
+          <pre>Bệnh án: Chị Tú kết hôn 5 năm mà chưa có con. Chị đi kiểm tra bác sĩ kết luận tắc vòi trứng, đã nong nhưng không được. Kinh nguyệt của chị không đều, có khi 40 ngày mới có kinh một lần. Lượng kinh ít, sắc kinh thâm đen, ăn uống đại tiểu tiện bình thường.
 
 Chị Tú tìm hiểu và được biết phòng khám Đông y Nguyễn Hữu Toàn đã chữa khỏi tắc vòi trứng cho hàng ngàn bệnh nhân mà không cần phẫu thuật. Chị từ Bến Tre gọi điện ra phòng khám để kể bệnh và đặt thuốc điều trị.
   
@@ -551,30 +674,30 @@ Chị Hồng đã có con 5 tuổi, chị muốn sinh thêm cháu thứ 2 mà kh
   
 Sau khi uống 50 thang thuốc + 5 hộp thuốc viên thông ứ hoàn chị Hồng thấy chậm kinh, thử que lên 2 vạch. 17/3/2016 chị Hồng đi kiểm tra thai được 6 tuần đã vào buồng tử cung, chị gửi lời cảm ơn phòng khám rất nhiều.
             </pre>
-          </div>
         </div>
       </div>
-      <div class="row align-items-center mt-3" style="padding: 20px;
+    </div>
+    <div class="row align-items-center mt-3" style="padding: 20px;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);">
-        <div class="col-lg-4 col-sm-6">
-          <div class="about-img mt-4 mt-lg-0">
-            <img src="https://luongynguyenhuutoan.com/images/nguyenthimung.jpg" alt="thaythuoccuaban" class="img-fluid"
-              loading="lazy">
-          </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="about-img mt-4 mt-lg-0">
+          <img src="https://luongynguyenhuutoan.com/images/nguyenthimung.jpg" alt="thaythuoccuaban" class="img-fluid"
+            loading="lazy">
         </div>
-        <div class="col-lg-8 col-sm-6">
-          <div class="about-content pl-4 mt-4 mt-lg-0">
-            <h3 class="text-md title-color">Nguyễn Thị Mừng 1987. Địa chỉ: Thôn Thanh Đặng –xã Minh Hải – huyện Văn Lâm
-              –Tỉnh Hưng Yên chia sẻ: Cảm ơn phòng khám rất nhiều ạ, em uống có 2 tháng thuốc, vòi trứng đã thông, em đã
-              sinh bé trai..."</h3>
-            <p class="text-center"><audio controls="">
-                <source src="https://thaythuoccuaban.com/video_cam_tuong/hothihien1984.mp3" type="audio/mpeg">
-              </audio></p>
-            <pre>Chị Mừng đã có 1 con 6 tuổi, muốn sinh cháu thứ 2 nhưng thả mãi chưa có. Chị đi kiểm tra vòi trứng tử cung kết quả chị bị tắc kẽ vòi trứng phải, niêm mạc tử cung mỏng. Kinh nguyệt thường chậm 2 đến 5 ngày, máu kinh ít, sắc kinh thâm đen, 2 ngày thì hết. Khí hư nhiều, loãng. Tiền sử huyết áp thấp. Ăn uống, đại tiểu tiện bình thường.
+      </div>
+      <div class="col-lg-8 col-sm-6">
+        <div class="about-content pl-4 mt-4 mt-lg-0">
+          <h3 class="text-md title-color">Nguyễn Thị Mừng 1987. Địa chỉ: Thôn Thanh Đặng –xã Minh Hải – huyện Văn Lâm
+            –Tỉnh Hưng Yên chia sẻ: Cảm ơn phòng khám rất nhiều ạ, em uống có 2 tháng thuốc, vòi trứng đã thông, em đã
+            sinh bé trai..."</h3>
+          <p class="text-center"><audio controls="">
+              <source src="https://thaythuoccuaban.com/video_cam_tuong/hothihien1984.mp3" type="audio/mpeg">
+            </audio></p>
+          <pre>Chị Mừng đã có 1 con 6 tuổi, muốn sinh cháu thứ 2 nhưng thả mãi chưa có. Chị đi kiểm tra vòi trứng tử cung kết quả chị bị tắc kẽ vòi trứng phải, niêm mạc tử cung mỏng. Kinh nguyệt thường chậm 2 đến 5 ngày, máu kinh ít, sắc kinh thâm đen, 2 ngày thì hết. Khí hư nhiều, loãng. Tiền sử huyết áp thấp. Ăn uống, đại tiểu tiện bình thường.
 
 Chị Mừng đến phòng khám bắt mạch và lấy thuốc điều trị. Sau khi uống tổng cộng 60 thang thuốc của phòng khám. Chị Mừng dừng thuốc. 1 tháng sau khi dừng thuốc chị mừng thấy chậm kinh, thử que lên 2 vạch. Ngày 11/6/2016 Chị Mừng thông báo tin vui cho phòng khám và gửi lời cảm ơn phòng khám.
 
@@ -583,53 +706,53 @@ Tháng 3/2017 chị Mừng đã sinh bé trai khỏe mạnh đáng yêu!
 Cắt 1 bên vòi trứng, bên còn lại tắc - Điều trị 60 thang thuốc có tin vui. Chúc mừng chị Hồ Thị Hiền 1984. Đ/C :Khối Quang Trung, Phường Quỳnh Dị, Thị Xã Hoàng Mai, tỉnh Nghệ An
 
 Chị Hiền đã có một con 5 tuổi, sau khi bé đầu tiên được 15 tháng chị có bầu nhưng lại bị thai ngoài tử cung, chị phải mổ cắt 1 bên vòi trứng. Vợ chồng anh chị thả 2 năm nay mà chưa có cháu. Chị đi kiểm tra kết quả: vòi trứng còn lại thông hạn chế. Chị đã mổ nội soi cách đây 4 tháng, sau khi mổ nội soi vòi trứng của chị đã thông. Vợ chồng anh chị chờ mãi mà chưa có tin vui. Kinh nguyệt của chị đều, chu kỳ kinh 27 ngày, kéo dài 2 ngày là sạch, lượng kinh bình thường, sắc kinh đỏ tươi, không hòn cục, không có đau bụng kinh. Hiện tại viêm dính phần phụ, có khí hư, ngứa rát âm đạo. Ăn uống đại tiểu tiện bình thường. Chị Hiền được giới thiệu tới Phòng khám Đông y Nguyễn Hữu Toàn lấy thuốc điều trị. Sau khi uống 60 thang thuốc tại phòng khám chị Hiền thấy chậm kinh, chị thử que lên 2 vạch. Chị đi siêu âm thai đã vào buồng tử cung. Chị Hiền gọi điện thông báo tin vui cho phòng khám và lấy thuốc bổ an thai để tăng cường sức khỏe cho mẹ và bé.</pre>
-          </div>
         </div>
       </div>
-      <div class="row align-items-center mt-3" style="padding: 20px;
+    </div>
+    <div class="row align-items-center mt-3" style="padding: 20px;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);">
-        <div class="col-lg-4 col-sm-6">
-          <div class="about-img mt-4 mt-lg-0">
-            <img src="https://luongynguyenhuutoan.com/images/vosinh-buithinga1986.jpg" alt="thaythuoccuaban"
-              class="img-fluid" loading="lazy">
-          </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="about-img mt-4 mt-lg-0">
+          <img src="https://luongynguyenhuutoan.com/images/vosinh-buithinga1986.jpg" alt="thaythuoccuaban"
+            class="img-fluid" loading="lazy">
         </div>
-        <div class="col-lg-8 col-sm-6">
-          <div class="about-content pl-4 mt-4 mt-lg-0">
-            <h3 class="text-md title-color">Chúc mừng chị Bùi Thị Nga - Ninh Xuân, Hoa Lư, Ninh Bình đã được làm mẹ ở
-              tuổi 33.</h3>
-            <pre>Chị Nga lấy chồng 2 năm,  2 vợ chồng mong có con luôn mà tin vui vẫn chưa đến. Chị đi khám thì phát hiện tắc 1 bên vòi trứng, vòi trứng còn lại thông hạn chế. Prolactin cao hơn mức bình thường. Có u tuyến yên.Tiền sử có viêm phần phụ. Kinh nguyệt đều, tuy nhiên sắc kinh đỏ thẫm, có nhiều hòn cục, có đau bụng kinh. Người nóng, hay bị nhiệt miệng.
+      </div>
+      <div class="col-lg-8 col-sm-6">
+        <div class="about-content pl-4 mt-4 mt-lg-0">
+          <h3 class="text-md title-color">Chúc mừng chị Bùi Thị Nga - Ninh Xuân, Hoa Lư, Ninh Bình đã được làm mẹ ở
+            tuổi 33.</h3>
+          <pre>Chị Nga lấy chồng 2 năm,  2 vợ chồng mong có con luôn mà tin vui vẫn chưa đến. Chị đi khám thì phát hiện tắc 1 bên vòi trứng, vòi trứng còn lại thông hạn chế. Prolactin cao hơn mức bình thường. Có u tuyến yên.Tiền sử có viêm phần phụ. Kinh nguyệt đều, tuy nhiên sắc kinh đỏ thẫm, có nhiều hòn cục, có đau bụng kinh. Người nóng, hay bị nhiệt miệng.
 
 Chị Nga có gọi điện về Phòng khám Đông y Nguyễn Hữu Toàn để đặt thuốc điều trị. Sau chưa đầy 3 tháng dùng thuốc chị Nga đã chậm kinh, thử que lên 2 vạch.
 
 Đầu tháng 12 năm 2019 chị Nga đã sinh bé được 3.2kg. Chị Nga gửi lời cảm ơn chân thành tới phòng khám!
 
 Thay mặt phòng khám xin được chúc mừng gia đình chị Nga. Chúc bé hay ăn chóng lớn, ngoan ngoãn.</pre>
-          </div>
         </div>
       </div>
-      <div class="row align-items-center mt-3" style="padding: 20px;
+    </div>
+    <div class="row align-items-center mt-3" style="padding: 20px;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);">
-        <div class="col-lg-4 col-sm-6">
-          <div class="about-img mt-4 mt-lg-0">
-            <img src="https://luongynguyenhuutoan.com/images/tacvoitrung-nguyenthingan1974.jpg" alt="thaythuoccuaban"
-              class="img-fluid" loading="lazy">
-          </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="about-img mt-4 mt-lg-0">
+          <img src="https://luongynguyenhuutoan.com/images/tacvoitrung-nguyenthingan1974.jpg" alt="thaythuoccuaban"
+            class="img-fluid" loading="lazy">
         </div>
-        <div class="col-lg-8 col-sm-6">
-          <div class="about-content pl-4 mt-4 mt-lg-0">
-            <h3 class="text-md title-color">Nguyễn Thị Ngân 1978 và chồng là anh Dương Tất Lợi 1974. <br>
+      </div>
+      <div class="col-lg-8 col-sm-6">
+        <div class="about-content pl-4 mt-4 mt-lg-0">
+          <h3 class="text-md title-color">Nguyễn Thị Ngân 1978 và chồng là anh Dương Tất Lợi 1974. <br>
 
-              Địa chỉ: Cty TNHH 1 thành viên Lâm Nghiệp Quỳnh Lưu - khối 11 Thị Trấn Cầu Giáp, Quỳnh Lưu, Nghệ An.</h3>
-            <pre>Tháng 5/2017 chị Ngân và anh Lợi được người quen giới thiệu đã gọi điện về phòng khám Đông y Nguyễn Hữu Toàn để đặt thuốc điều trị hiếm muộn.
+            Địa chỉ: Cty TNHH 1 thành viên Lâm Nghiệp Quỳnh Lưu - khối 11 Thị Trấn Cầu Giáp, Quỳnh Lưu, Nghệ An.</h3>
+          <pre>Tháng 5/2017 chị Ngân và anh Lợi được người quen giới thiệu đã gọi điện về phòng khám Đông y Nguyễn Hữu Toàn để đặt thuốc điều trị hiếm muộn.
 
 Chị Ngân cho biết: Vợ chồng anh chị đã có 1 cháu 14 tuổi (mang thai tự nhiên), cháu thứ 2 thụ tinh ống nghiệm giờ cũng đã lớn, anh chị muốn sinh thêm bé thứ 3. Cháu thứ 3 anh chị định sẽ làm thụ tinh ống nghiệm tuy nhiên kiểm tra sức khỏe của cả 2 vợ chồng đều không đạt yêu cầu, nên không thể làm thụ tinh ống nghiệm. Anh chị được 1 bệnh nhân đã từng uống thuốc điều trị hiếm muộn của Phòng khám Đông y Nguyễn Hữu Toàn và đã sinh được 2 bé trai giới thiệu nên anh chị có gọi điện về phòng khám để đặt thuốc điều trị.
 
@@ -639,32 +762,32 @@ Trích bệnh án của anh Lợi: Tinh trùng yếu, ít, tiến tới nhanh = 
 
 Sau khi được phòng khám tư vấn, anh chị đã đặt thuốc điều trị. Sau khi uống được 70 thang thuốc, chị Hiền thấy có biểu hiện chậm kinh, người khó chịu khác thường. Chị thử que đã lên 2 vạch. Vợ chồng chị vô cùng hạnh phúc, và gửi lời cảm ơn tới Lương y Nguyễn Hữu Toàn và tập thể các thầy thuốc tại Phòng khám.
             </pre>
-          </div>
         </div>
       </div>
-      <div class="row align-items-center mt-3" style="padding: 20px;
+    </div>
+    <div class="row align-items-center mt-3" style="padding: 20px;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);">
-        <div class="col-lg-4 col-sm-6">
-          <div class="about-img mt-4 mt-lg-0">
-            <img src="https://luongynguyenhuutoan.com/images/tacvoitrung-nguyenthikimanh1985.jpg" alt="thaythuoccuaban"
-              class="img-fluid" loading="lazy">
-          </div>
-        </div>
-        <div class="col-lg-8 col-sm-6">
-          <div class="about-content pl-4 mt-4 mt-lg-0">
-            <h3 class="text-md title-color">Nguyễn Thị Kim Anh 1985. Địa chỉ:114 Tây Ga, Phường Phú Sơn, TP Thanh Hóa
-            </h3>
-
-            <pre>Chị Kim Anh đã có 1 con 8 tuổi, muốn sinh thêm bé nữa nhưng thả 2 năm nhưng ko có. Trước đây sau khi sinh bé thứ nhất xong chị có đặt vòng tránh thai, đã tháo vòng hơn 4 năm nay. Sau khi tháo vòng thả mà không có bé, chị đi kiểm tra bác sĩ kết luận ứ nước 2 vòi trứng và yêu cầu mổ thông vòi trứng. Chị đã mổ thông vòi trứng và bơm IUI nhưng không thành công. 1 năm sau chị đi khám lại kết quả vòi trứng của chị lại bị ứ nước hai bên, kèm theo viêm lộ tuyến độ 1. Kinh nguyệt đều.
-
-Chị Kim Anh tìm hiểu trên mạng và biết được thông tin về phòng khám Đông y Nguyễn Hữu Toàn có bài thuốc gia truyền điều trị ứ nước vòi trứng, tắc vòi trứng rất hiệu quả. Chị có gọi điện về phòng khám đặt thuốc (18006834). Sau 2 liệu trình điều trị (40 thang thuốc) chị Kim Anh thấy chậm kinh, thử que lên 2 vạch. Chị đi siêu âm thai đã được 5 tuần và đã vào buồng tử cung, thai nhi phát triển tốt. Chị Kim Anh rất vui mừng và gửi lời cảm ơn phòng khám.</pre>
-          </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="about-img mt-4 mt-lg-0">
+          <img src="https://luongynguyenhuutoan.com/images/tacvoitrung-nguyenthikimanh1985.jpg" alt="thaythuoccuaban"
+            class="img-fluid" loading="lazy">
         </div>
       </div>
+      <div class="col-lg-8 col-sm-6">
+        <div class="about-content pl-4 mt-4 mt-lg-0">
+          <h3 class="text-md title-color">Nguyễn Thị Kim Anh 1985. Địa chỉ:114 Tây Ga, Phường Phú Sơn, TP Thanh Hóa
+          </h3>
+
+          <pre>Chị Kim Anh đã có 1 con 8 tuổi, muốn sinh thêm bé nữa nhưng thả 2 năm nhưng ko có. Trước đây sau khi sinh bé thứ nhất xong chị có đặt vòng tránh thai, đã tháo vòng hơn 4 năm nay. Sau khi tháo vòng thả mà không có bé, chị đi kiểm tra bác sĩ kết luận ứ nước 2 vòi trứng và yêu cầu mổ thông vòi trứng. Chị đã mổ thông vòi trứng và bơm IUI nhưng không thành công. 1 năm sau chị đi khám lại kết quả vòi trứng của chị lại bị ứ nước hai bên, kèm theo viêm lộ tuyến độ 1. Kinh nguyệt đều.
+
+Chị Kim Anh tìm hiểu trên mạng và biết được thông tin về phòng khám Đông y Nguyễn Hữu Toàn có bài thuốc gia truyền điều trị ứ nước vòi trứng, tắc vòi trứng rất hiệu quả. Chị có gọi điện về phòng khám đặt thuốc (18006834). Sau 2 liệu trình điều trị (40 thang thuốc) chị Kim Anh thấy chậm kinh, thử que lên 2 vạch. Chị đi siêu âm thai đã được 5 tuần và đã vào buồng tử cung, thai nhi phát triển tốt. Chị Kim Anh rất vui mừng và gửi lời cảm ơn phòng khám.</pre>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
   <section class="section service gray-bg">
@@ -674,7 +797,6 @@ Chị Kim Anh tìm hiểu trên mạng và biết được thông tin về phòn
           <div class="section-title">
             <h2>Chia sẻ từ những ca bệnh nhân </h2>
             <div class="divider mx-auto my-4"></div>
-            <p>Những tài liệu được chia sẻ lan truyền từ bệnh nhân</p>
           </div>
         </div>
       </div>
@@ -1008,7 +1130,7 @@ Chị Thùy biết thông tin phòng khám Đông y Nguyễn Hữu Toàn ở H�
         <div class="row d-flex justify-content-center">
           <div class="form-info text-center">
             <div class="card" style="margin-top: 0 !important;">
-              <h4 class="text-center mb-4 text-success" >TÔI MUỐN ĐƯỢC TƯ VẤN</h4>
+              <h4 class="text-center mb-4 text-success">TÔI MUỐN ĐƯỢC TƯ VẤN</h4>
               <form id="contact-form" class="form-card">
                 <div class="row justify-content-between text-left">
                   <div class="form-group col-sm-12 flex-column d-flex">
@@ -1054,12 +1176,15 @@ Chị Thùy biết thông tin phòng khám Đông y Nguyễn Hữu Toàn ở H�
             <h3 class="widget-title">Danh mục bài viết</h3>
 
             <div class="post-item">
-              <h4><a href="https://amp.thaythuoccuaban.com/chedoan/chua-tac-voi-trung-nho-an-toi.html">Ăn 5-7 tép tỏi mỗi ngày khỏi tắc vòi trứng ???</a></h4>
+              <h4><a href="https://amp.thaythuoccuaban.com/chedoan/chua-tac-voi-trung-nho-an-toi.html">Ăn 5-7 tép tỏi
+                  mỗi ngày khỏi tắc vòi trứng ???</a></h4>
 
             </div><!-- End recent post item-->
 
             <div class="post-item">
-              <h4><a href="https://amp.thaythuoccuaban.com/thuoc_chua_benh_viem_dau/ly-do-thai-phu-nen-uong-thuoc-bo-an-thai.html">Sinh con khỏe mạnh hơn nhờ thuốc bổ an thai</a></h4>
+              <h4><a
+                  href="https://amp.thaythuoccuaban.com/thuoc_chua_benh_viem_dau/ly-do-thai-phu-nen-uong-thuoc-bo-an-thai.html">Sinh
+                  con khỏe mạnh hơn nhờ thuốc bổ an thai</a></h4>
 
             </div><!-- End recent post item-->
 
@@ -1134,8 +1259,104 @@ Chị Thùy biết thông tin phòng khám Đông y Nguyễn Hữu Toàn ở H�
         </div>
       </div>
     </div>
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/iKIGd9vZLTM"
+      title="Hướng dẫn sắc thuốc chữa Tắc Vòi Trứng - Đông y gia truyền Nguyễn Hữu Toàn - Hotline: 18006834"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+  <div class="nht-contact-wrapper">
+    <div class="nht-contact-card">
+      <div class="nht-content-container">
+        <div class="nht-header-section">
+          <h1 class="nht-clinic-title">PHÒNG KHÁM ĐÔNG Y NGUYỄN HỮU TOÀN</h1>
+          <div class="nht-clinic-subtitle">Chuyên điều trị Dính buồng tử cung</div>
+        </div>
 
+        <div class="nht-contact-grid">
+          <div class="nht-contact-info-item">
+            <div class="nht-icon-container">📞</div>
+            <div class="nht-contact-content">
+              <div class="nht-contact-label">Điện thoại:</div>
+              <div class="nht-contact-text">0225.7300111 - 18006834</div>
+            </div>
+          </div>
+
+          <div class="nht-contact-info-item">
+            <div class="nht-icon-container">💬</div>
+            <div class="nht-contact-content">
+              <div class="nht-contact-label">Zalo:</div>
+              <div class="nht-contact-text">0912759613 - 0943954889</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nht-locations-container">
+          <div class="nht-location-card">
+            <div class="nht-location-heading">Cơ sở 1</div>
+            <div class="nht-location-text">
+              Số 482, lô 22C, Lê Hồng Phong,<br>
+              Ngô Quyền, Hải Phòng
+            </div>
+          </div>
+
+          <div class="nht-location-card">
+            <div class="nht-location-heading">Cơ sở 2</div>
+            <div class="nht-location-text">
+              Số 16, lô 1B, Trung Yên 11,<br>
+              Trung Hòa, Cầu Giấy, Hà Nội
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <header class="history-header">
+      <h1>Lịch Sử 35 Năm Phòng Khám Đông Y Nguyễn Hữu Toàn</h1>
+    </header>
+
+    <section class="content-section">
+      <h2 class="section-title-history">Khởi Nguồn Và Phát Triển</h2>
+      <p>Thầy Nguyễn Hữu Toàn được sinh ra và lớn lên trong một môi trường đông y, được đi theo, học tập và làm
+        việc dưới chỉ dạy của y sư Nguyễn Hữu Hách. Tháng 2 năm 1989 thầy Nguyễn Hữu Toàn thành lập phòng khám
+        đông y Nguyễn Hữu Toàn với tâm niệm tiếp nối truyền thống gia đình, chữa bệnh giúp người.</p>
+
+      <div class="highlight">
+        <p>Sau 35 năm thành lập, xây dựng và phát triển, phòng khám đông y Nguyễn Hữu Toàn không chỉ trở thành
+          một trong số những địa chỉ uy tín hàng đầu của thành phố Cảng Hải Phòng và trên toàn quốc, đem lại
+          rất nhiều giá trị cho bệnh nhân và xã hội.</p>
+      </div>
+
+      <div class="image-container">
+        <img src="https://luongynguyenhuutoan.com//images/luong-y-nguyen-huu-toan-boc-thuoc.jpg"
+          alt="Lương y Nguyễn Hữu Toàn" class="clinic-image">
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-title">Lịch Sử 15 Đời Hành Y Dòng Họ Nguyễn Hữu</h2>
+      <p>Dòng họ Nguyễn Hữu thuộc đất Vân Canh, Hoài Đức, Hà Nội. Khi đó, cụ tổ của dòng họ là thầy lang bốc thuốc
+        nổi tiếng cho người dân vùng xung quanh. Nghề y gia truyền của dòng họ Nguyễn Hữu cũng từ đó mà dần phát
+        triển.</p>
+
+      <p>Đến đời cố y sư Nguyễn Hữu Hách (1 trong 28 vị danh y đầu tiên của Viện Đông y Việt Nam) thì nghề thuốc
+        của gia đình được nhiều người biết đến hơn. Y sư Nguyễn Hữu Hách viết cuốn "Châm cứu thực hành" (xuất
+        bản từ những năm 1960- đã tái bản nhiều lần) được Bs Nguyễn Văn Hưởng đề tựa "Giỏi thuốc bắc, vững thuốc
+        nam, đi sâu châm cứu".</p>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/1CW8CmIB9TY"
+          title="Phòng khám Đông y gia truyền Nguyễn Hữu Toàn - Trăm năm truyền thống"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><strong>Theo thaythuoccuaban.com tổng hợp</strong></p>
+    </footer>
+  </div>
   <footer class="footer">
     <div class="footer_end">
 
@@ -1351,6 +1572,93 @@ Chị Thùy biết thông tin phòng khám Đông y Nguyễn Hữu Toàn ở H�
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <!-- end  -->
+  <script>
+    const videos = [
+      {
+        title: "Chữa vô sinh - Địa chỉ chữa vô sinh - Ý kiến của bệnh nhân",
+        url: "https://www.youtube.com/embed/g1J14FQ7h7o"
+      },
+      {
+        title: "Tư vấn chữa vô sinh hiếm muộn - 18006834 - Đông y Nguyễn Hữu Toàn",
+        url: "https://www.youtube.com/embed/ss2ZfAyVdMk"
+      },
+      {
+        title: "TẮC 2 VÒI TRỨNG - KHÔNG CẦN MỔ - VẪN CÓ THAI TỰ NHIÊN - GIA TRUYỀN",
+        url: "https://www.youtube.com/embed/oi53QiC_8tU"
+      },
+      {
+        title: "Tắc 2 bên vòi trứng - vô sinh thứ phát",
+        url: "https://www.youtube.com/embed/Ok-HYTyIbWE"
+      },
+      {
+        title: "CHỮA TẮC VÒI TRỨNG KO PHẢI MỔ - UỐNG ĐÔNG Y THÔNG NGAY - CÓ THAI TỰ NHIÊN",
+        url: "https://www.youtube.com/embed/d1CaOW-HNJA"
+      }
+    ];
+
+    function updateCurrentDate() {
+      const dateElement = document.getElementById('todayDate');
+      const today = new Date();
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      };
+      dateElement.textContent = today.toLocaleDateString('vi-VN', options);
+    }
+
+    function displayCurrentVideo() {
+      const videoDisplay = document.getElementById('videoDisplay');
+      const today = new Date();
+      const videoIndex = today.getDate() % videos.length;
+
+      videoDisplay.innerHTML = `
+            <iframe 
+                src="${videos[videoIndex].url}" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <div class="video-title">${videos[videoIndex].title}</div>
+        `;
+    }
+
+    let currentIndex = 0;
+
+    function displayVideo(index) {
+      const videoDisplay = document.getElementById('videoDisplay');
+      currentIndex = index;
+
+      videoDisplay.innerHTML = `
+            <iframe 
+                src="${videos[index].url}" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <div class="video-title">${videos[index].title}</div>
+        `;
+    }
+
+    function showPreviousVideo() {
+      currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+      displayVideo(currentIndex);
+    }
+
+    function showNextVideo() {
+      currentIndex = (currentIndex + 1) % videos.length;
+      displayVideo(currentIndex);
+    }
+
+    // Thêm event listeners
+    document.getElementById('prevBtn').addEventListener('click', showPreviousVideo);
+    document.getElementById('nextBtn').addEventListener('click', showNextVideo);
+
+    // Khởi tạo
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCurrentDate();
+      displayCurrentVideo();
+    });
+  </script>
 </body>
 
 </html>
