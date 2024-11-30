@@ -17,7 +17,6 @@
     <!-- Slick Slider  CSS -->
     <link rel="stylesheet" href="./assets/assets/plugins/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="./assets/assets/plugins/slick-carousel/slick/slick-theme.css">
-
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./assets/assets/css/style.css">
     <meta name="description"
@@ -231,7 +230,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -1261,7 +1259,34 @@
         </div>
     </footer>
     <!-- Scroll Top -->
-
+    <!-- phản ánh  -->
+    <div id="nht-feedback-container">
+        <!-- Floating Button -->
+        <div class="nht-feedback-wrapper">
+            <button class="nht-feedback-button nht-feedback-bounce" onclick="showFeedbackModal()">
+                <i class="bi bi-telephone-fill fs-4"></i>
+            </button>
+        </div>
+    
+        <!-- Modal -->
+        <div id="nht-feedback-modal" class="nht-feedback-modal">
+            <div class="nht-feedback-modal-content">
+                <span class="nht-feedback-close" onclick="hideFeedbackModal()">&times;</span>
+                <h5 class="text-center mb-4">Phản Ánh Chất Lượng</h5>
+                <div class="d-grid gap-3">
+                    <a href="tel:0334266646" class="btn btn-success d-flex align-items-center justify-content-center gap-2">
+                        <i class="bi bi-telephone-fill"></i>
+                        Gọi Điện Trực Tiếp
+                    </a>
+                    <a href="https://zalo.me/0334266646" class="btn btn-primary d-flex align-items-center justify-content-center gap-2">
+                        <i class="bi bi-chat-fill"></i>
+                        Liên Hệ Qua Zalo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- kết thúc phản ánh  -->
     <!-- contact -->
     <div id='chiase' style="position: fixed;left: 90% !important;top: 80%;z-index: 10;">
         <a href="tel://18006834"><img class="lazyload" data-src="https://amp.thaythuoccuaban.com/1800.jpg" width="30"
@@ -1572,6 +1597,24 @@
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
     <script src="assets/js/main.js"></script>
+    <!-- phản ánh  -->
+    <script>
+        function showFeedbackModal() {
+            document.getElementById('nht-feedback-modal').style.display = 'block';
+        }
+    
+        function hideFeedbackModal() {
+            document.getElementById('nht-feedback-modal').style.display = 'none';
+        }
+    
+        // Đóng modal khi click ra ngoài
+        window.onclick = function(event) {
+            var modal = document.getElementById('nht-feedback-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
